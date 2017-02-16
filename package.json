@@ -1,0 +1,27 @@
+{
+  "name": "portfolio_v2",
+  "version": "1.0.0",
+  "description": "get an awesome job",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TTN-js/portfolioV2.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Thomas T. Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TTN-js/portfolioV2/issues"
+  },
+  "homepage": "https://github.com/TTN-js/portfolioV2#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-ruby-sass": "^2.1.1"
+  }
+}
