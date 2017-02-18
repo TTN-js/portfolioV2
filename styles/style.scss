@@ -1,5 +1,6 @@
 body {
 min-width: 320px;
+
 }
 
 .hero-unit {
@@ -35,22 +36,13 @@ min-width: 320px;
     }
 }
 
-
-header .main-nav-scrolled{
-	position: fixed;
-	width: 100%;
-	top: 0;
-}
-
-#nav, #about{
-	position: relative;
-}
-
 #about{
 	margin-top: -16px;
 	background-color: #fff;
+	padding: 140px 50px 50px;
+	position: relative;
+	z-index: 100;
 }
-
 
 #resume{
 	max-width: 650px;

@@ -33,5 +33,18 @@ $( 'button' ).click(function(){
 	window.scroll({ top: window.innerHeight, left: 0, behavior: 'smooth' });
 });
 
+// navbar sticky 
+var nb = $(".navbar");
+
+$(window).scroll(function(){
+	if($(this).scrollTop() > window.innerHeight - 1){
+		nb.removeClass("navbar");
+		nb.addClass("main-nav-scrolled");
+	} else {
+		nb.removeClass("main-nav-scrolled");
+		nb.addClass("navbar");
+	}
+});
+
 // scroll back to the top
 // window.scroll({ top: 0, left: 0, behavior: 'smooth' });
