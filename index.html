@@ -8,18 +8,16 @@
 		<!-- jquery -->
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-		<!-- js -->
-		<script src="js/app.js" type="text/javascript"></script>
+
+		<!-- fontawesome -->
+		<link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet"> 
 
 		<!-- css -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!-- css normalize -->
-		<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"></script>
 		<!-- bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-		<!-- fontawesome -->
-		<link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet"> 
 
 		<title>T.T.N. | WEB DVLPR</title>
 		<link rel="icon" type="image/png" href="images/ttn.png">
@@ -27,18 +25,58 @@
 
 	<!-- content -->
 	<body>
-		<div class='container'>
-			<h1 class='display-1'>Hello, world!</h1>
-			<i class="fa fa-magic"><span class='lead'>Coming Soon!</span></i>
+		<header>
+			<div class='hero-unit'>
+				<h1 class='display-1'>Hello world! My name is Thomas </h1>
+				<h2 id="mytypingText" class='small'></h2>
+				<button type="button" class="btn btn-info" id="button">Get To Know Me</button>
 
-		</div>
+			</div>
+		</header>
+
+		<!-- navbar -->
+		<nav id="nav">
+			<ul>
+				<li>home</li>
+				<li>about</li>
+				<li>work</li>
+				<li>résumé</li>
+				<li>contact</li>
+			</ul>
+		</nav>
+
+		<section id="about">
+			<h1>about me stuff</h1>
+			<p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+			<p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+		</section>
+
+		<!-- <section id="work">
+			<h1>about me stuff</h1>
+			<p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+			<p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+		</section> -->
+
 		<!-- embedded resume -->
-		<!-- <object data="https://drive.google.com/file/d/0B0JZH_Up9plldVNtZndSSTJlX1U/preview" type="application/pdf" width="650" height="650">
-	        <embed src="https://drive.google.com/file/d/0B0JZH_Up9plldVNtZndSSTJlX1U/preview" type="application/pdf" />
-	   	</object> -->
+		<!-- <section id="resume">
+			<object data="https://drive.google.com/file/d/0B0JZH_Up9plldVNtZndSSTJlX1U/preview" type="application/pdf" width="650" height="650">
+		        <embed src="https://drive.google.com/file/d/0B0JZH_Up9plldVNtZndSSTJlX1U/preview" type="application/pdf" />
+		   	</object>
+	   	</section> -->
+
+	   	<!-- <section id="contact">
+			<h1>about me stuff</h1>
+			<p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+			<p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+		</section> -->
 	   	
 		<!-- bottom feeder -->
-		<!-- <footer></footer> -->	
+		<!-- <footer>
+			<p>&copy; 2017 Thomas Nguyen</p>
+		</footer>	 -->
+
+		<!-- js -->
+		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 
 </html>
