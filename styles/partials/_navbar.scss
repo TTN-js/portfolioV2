@@ -1,7 +1,7 @@
 #nav{
 	font-family: courier new;
-	height: 136px;
-	z-index: 150;
+/* 	height: 136px;
+ */	z-index: 150;
 	background-color: #E4D7B1;
 	box-shadow: 0 2px 3px rgba(0,0,0, .4);
 	/* needs to be navs height */
@@ -19,6 +19,10 @@
     margin-bottom: 136px;
 }
 
+nav li {
+	display: inline-block;
+}
+
 nav a, nav a:visited{
     color: #31b0d5;
     text-decoration: none !important;
@@ -30,3 +34,5 @@ nav a.selected, nav a:hover{
     color: #ffffff;
     text-decoration: underline !important;
 }
+
+/* nav ul li a */

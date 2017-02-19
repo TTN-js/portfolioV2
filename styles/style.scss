@@ -11,7 +11,7 @@ li{
 }
 
 .hero-unit {
-    background-image:url('../images/hero1.jpg');
+    background-image:url('../images/hero1.jpg'); /* https://source.unsplash.com/random */
     background-size:cover;
     background-color: #000;
     height:100vh;
@@ -53,14 +53,38 @@ li{
 #wrapper{
 	margin-top: -16px;
 	background-color: #fff;
-	padding: 140px 50px 50px;
+	padding: 80px 80px 80px;
 	position: relative;
 	z-index: 100;
 }
 
+#about{
+	height: 100vh;
+}
+
+#work{
+	height: 100vh;
+
+	#portfolio{
+		background-color: red;
+	}
+
+	#github{
+		background-color: blue;
+	}
+}
+
 #resume{
-	max-width: 650px;
-	margin: 0 auto;
+	height: 100vh;
+
+	#resume-frame{
+		max-width: 650px;
+		margin: 0 auto;
+	}
+}
+
+#contact{
+	height: 100vh;
 }
 
 /* imports */

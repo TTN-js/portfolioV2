@@ -33,6 +33,49 @@ $( 'button' ).click(function(){
 	window.scroll({ top: window.innerHeight, left: 0, behavior: 'smooth' });
 });
 
+$(document).on('click', 'a[href^="#"]', function(e) {
+    // target element id
+    var id = $(this).attr('href');
+    
+    // target element
+    var $id = $(id);
+    // if nothing then die
+    if ($id.length === 0) {
+        return;
+    }
+
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+    
+    // top position relative to the document
+    var pos = $id.position().top;
+
+    switch(id) {
+        case "#home":
+           	window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+            break;
+        case "#about":
+            window.scroll({ top: window.innerHeight + pos - 70, left: 0, behavior: 'smooth' });
+            break;
+        case "#work":
+            window.scroll({ top: window.innerHeight + pos - 70, left: 0, behavior: 'smooth' });
+            break;
+        case "#resume":
+            window.scroll({ top: window.innerHeight + pos - 70, left: 0, behavior: 'smooth' });
+            break;
+        case "#contact":
+            window.scroll({ top: window.innerHeight + pos - 70, left: 0, behavior: 'smooth' });
+            break;
+        default:
+            window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    } 
+
+    // alert(window.innerHeight - pos);
+    // animated top scrolling
+    // window.scroll({ top: window.innerHeight + pos - 100, left: 0, behavior: 'smooth' });
+    // $('body, html').animate({scrollTop: pos});
+});
+
 // navbar sticky 
 var nb = $(".navbar");
 
