@@ -1,9 +1,11 @@
 #nav{
+	font-family: courier new;
 	height: 136px;
 	z-index: 150;
 	background-color: #E4D7B1;
 	box-shadow: 0 2px 3px rgba(0,0,0, .4);
 	/* needs to be navs height */
+	text-align: center;
 }
 
 .navbar{
@@ -15,4 +17,16 @@
 	width: 100%;
     top: 0;
     margin-bottom: 136px;
+}
+
+nav a, nav a:visited{
+    color: #31b0d5;
+    text-decoration: none !important;
+    font-size: 1.1em;
+    padding: 16px;
+}
+
+nav a.selected, nav a:hover{
+    color: #ffffff;
+    text-decoration: underline !important;
 }
