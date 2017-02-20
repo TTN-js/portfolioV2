@@ -15,20 +15,14 @@ $( 'button' ).click(function(){
 });
 
 $(document).on('click', 'a[href^="#"]', function(e) {
-    // target element id
     var id = $(this).attr('href');
-    
-    // target element
     var $id = $(id);
-    // if nothing then die
+
     if ($id.length === 0) {
         return;
     }
 
-    // prevent standard hash navigation (avoid blinking in IE)
     e.preventDefault();
-    
-    // top position relative to the document
     var pos = $id.position().top;
 
     switch(id) {
@@ -52,66 +46,95 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     } 
 });
 
-
-var topofHome = $("#h").offset().top; 
-var heightofHome = $("#h").outerHeight(); 
-
-var topofAbout = $("#a").offset().top; 
-var heightofAbout = $("#a").outerHeight();
-
-var topofPortfolio = $("#p").offset().top; 
-var heightofPortfolio = $("#p").outerHeight();
-
-var topofResume = $("#r").offset().top; 
-var heightofResume = $("#r").outerHeight();
-
-var topofContact = $("#c").offset().top; 
-var heightofContact = $("#c").outerHeight();
-
+// nav highlight
 $(window).scroll(function(){
-	
 	$("#h").blur();
 	$("#a").blur();
 	$("#p").blur();
 	$("#r").blur();
 	$("#c").blur();
-
-    if($(window).scrollTop() < (topofHome + heightofHome - 80)){
-       $("#h").addClass('selected');
-       $("#a").removeClass('selected');
-       $("#p").removeClass('selected');
-       $("#r").removeClass('selected');
-       $("#c").removeClass('selected');
-    }
-    if($(window).scrollTop() > (topofAbout + heightofAbout - 80)){
-       $("#a").addClass('selected');
-       $("#h").removeClass('selected');
-       $("#p").removeClass('selected');
-       $("#r").removeClass('selected');
-       $("#c").removeClass('selected');
-    }
-    if($(window).scrollTop() > (topofPortfolio + heightofPortfolio + 600)){
-       $("#p").addClass('selected');
-       $("#h").removeClass('selected');
-       $("#a").removeClass('selected');
-       $("#r").removeClass('selected');
-       $("#c").removeClass('selected');
-    }
-    if($(window).scrollTop() > (topofResume + heightofResume + 1200)){
-       $("#r").addClass('selected');
-       $("#h").removeClass('selected');
-       $("#a").removeClass('selected');
-       $("#p").removeClass('selected');
-       $("#c").removeClass('selected');
-    }
-    if($(window).scrollTop() > (topofContact + heightofContact + 1800)){
-       $("#c").addClass('selected');
-       $("#h").removeClass('selected');
-       $("#a").removeClass('selected');
-       $("#p").removeClass('selected');
-       $("#r").removeClass('selected');
-    }
 });
+
+var about = new Waypoint({
+  element: document.getElementById('about'),
+  handler: function(direction) {
+  	if(direction === "down"){
+  		$("#a").addClass('selected');
+  		$("#h").removeClass('selected');
+  		$("#p").removeClass('selected');
+  		$("#r").removeClass('selected');
+  		$("#c").removeClass('selected');
+  	}else{
+  		$("#h").addClass('selected');
+  		$("#a").removeClass('selected');
+  		$("#p").removeClass('selected');
+  		$("#r").removeClass('selected');
+  		$("#c").removeClass('selected');
+  	}
+  },
+  offset: 150
+});
+
+var portfolio = new Waypoint({
+  element: document.getElementById('portfolio'),
+  handler: function(direction) {
+  	if(direction === "down"){
+  		$("#p").addClass('selected');
+  		$("#h").removeClass('selected');
+  		$("#a").removeClass('selected');
+  		$("#r").removeClass('selected');
+  		$("#c").removeClass('selected');
+  	}else{
+  		$("#a").addClass('selected');
+  		$("#h").removeClass('selected');
+  		$("#p").removeClass('selected');
+  		$("#r").removeClass('selected');
+  		$("#c").removeClass('selected');
+  	}
+  },
+  offset: 150
+});
+
+var resume = new Waypoint({
+  element: document.getElementById('resume'),
+  handler: function(direction) {
+  	if(direction === "down"){
+  		$("#r").addClass('selected');
+  		$("#h").removeClass('selected');
+  		$("#p").removeClass('selected');
+  		$("#a").removeClass('selected');
+  		$("#c").removeClass('selected');
+  	}else{
+  		$("#p").addClass('selected');
+  		$("#h").removeClass('selected');
+  		$("#a").removeClass('selected');
+  		$("#r").removeClass('selected');
+  		$("#c").removeClass('selected');
+  	}
+  },
+  offset: 150
+});
+
+var contact = new Waypoint({
+  element: document.getElementById('contact'),
+  handler: function(direction) {
+  	if(direction === "down"){
+  		$("#c").addClass('selected');
+  		$("#h").removeClass('selected');
+  		$("#p").removeClass('selected');
+  		$("#r").removeClass('selected');
+  		$("#a").removeClass('selected');
+  	}else{
+  		$("#r").addClass('selected');
+  		$("#h").removeClass('selected');
+  		$("#p").removeClass('selected');
+  		$("#a").removeClass('selected');
+  		$("#c").removeClass('selected');
+  	}
+  },
+  offset: 150
+});
+
 
 // navbar sticky 
 var nb = $(".navbar");
