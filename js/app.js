@@ -36,7 +36,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
            	window.scroll({ top: 0, left: 0, behavior: 'smooth' });
             break;
         case "#about":
-            window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' });
+            window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' });         		
             break;
         case "#portfolio":
             window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' });
@@ -51,6 +51,32 @@ $(document).on('click', 'a[href^="#"]', function(e) {
             window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     } 
 });
+
+
+// $(window).scroll(function(){
+//     if($(window).scrollTop() <= 760){
+//       $("#h").css({"color": "#fff", "text-decoration": "underline"});
+//     }
+//     else if ($(window).scrollTop() <= 845){
+//        $("#h").css({color: "#31b0d5"});
+//        $("#a").css({"color": "#fff", "text-decoration": "underline"});
+//     }
+//     else if ($(window).scrollTop() <= 1610){
+//        $("#a").css({color: "#31b0d5"});
+//        $("#p").css({"color": "#fff", "text-decoration": "underline"});
+//     }
+//     else if ($(window).scrollTop() <= 2375){
+//        $("#p").css({color: "#31b0d5"});
+//        $("#r").css({"color": "#fff", "text-decoration": "underline"});
+//     }
+//     else if ($(window).scrollTop() <= 3140){
+//        $("#r").css({color: "#31b0d5"});
+//        $("#c").css({"color": "#fff", "text-decoration": "underline"});
+//     }
+//     else {
+//     	$("#c").css({color: "#31b0d5"});
+//     }
+// });
 
 // navbar sticky 
 var nb = $(".navbar");
@@ -86,4 +112,6 @@ $( document ).ready(function(){
 });
 	
 // scroll back to the top
-// window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+$( '.back-to-top' ).click(function(){
+	window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+});

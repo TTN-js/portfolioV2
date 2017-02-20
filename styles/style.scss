@@ -92,6 +92,19 @@ section h1{
 	height: 80vh;
 }
 
+.back-to-top {
+	position:absolute;
+   	bottom:90px;
+   	right: 16px;
+   	z-index: 100;
+   	background-color: rgba(0,0,0,0.7);
+   	border-radius: 5px;
+   	padding: 5px;
+   	cursor: pointer;
+   	text-align: center;
+   	color: #fff;
+}
+   
 footer{
   position: absolute;
   right: 0;
