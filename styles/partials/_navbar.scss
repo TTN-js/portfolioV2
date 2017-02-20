@@ -29,9 +29,9 @@ nav a:hover{
 	text-decoration: underline !important;
 }
 
-nav a:focus{
-	color: #ffffff;
-	text-decoration: underline !important;
+nav .focused:focus{
+	color: #31b0d5;
+	text-decoration: none !important;
 	outline: none;
 }
 
@@ -67,6 +67,12 @@ nav a:focus{
 
 #connect-drop:hover #connect-content {
 	display: block;
+}
+
+.selected{
+	color: #ffffff;
+	text-decoration: underline !important;
+	outline: none;
 }
 
 /* sticky nav */

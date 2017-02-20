@@ -53,30 +53,65 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 });
 
 
-// $(window).scroll(function(){
-//     if($(window).scrollTop() <= 760){
-//       $("#h").css({"color": "#fff", "text-decoration": "underline"});
-//     }
-//     else if ($(window).scrollTop() <= 845){
-//        $("#h").css({color: "#31b0d5"});
-//        $("#a").css({"color": "#fff", "text-decoration": "underline"});
-//     }
-//     else if ($(window).scrollTop() <= 1610){
-//        $("#a").css({color: "#31b0d5"});
-//        $("#p").css({"color": "#fff", "text-decoration": "underline"});
-//     }
-//     else if ($(window).scrollTop() <= 2375){
-//        $("#p").css({color: "#31b0d5"});
-//        $("#r").css({"color": "#fff", "text-decoration": "underline"});
-//     }
-//     else if ($(window).scrollTop() <= 3140){
-//        $("#r").css({color: "#31b0d5"});
-//        $("#c").css({"color": "#fff", "text-decoration": "underline"});
-//     }
-//     else {
-//     	$("#c").css({color: "#31b0d5"});
-//     }
-// });
+var topofHome = $("#h").offset().top; 
+var heightofHome = $("#h").outerHeight(); 
+
+var topofAbout = $("#a").offset().top; 
+var heightofAbout = $("#a").outerHeight();
+
+var topofPortfolio = $("#p").offset().top; 
+var heightofPortfolio = $("#p").outerHeight();
+
+var topofResume = $("#r").offset().top; 
+var heightofResume = $("#r").outerHeight();
+
+var topofContact = $("#c").offset().top; 
+var heightofContact = $("#c").outerHeight();
+
+$(window).scroll(function(){
+	
+	$("#h").blur();
+	$("#a").blur();
+	$("#p").blur();
+	$("#r").blur();
+	$("#c").blur();
+
+    if($(window).scrollTop() < (topofHome + heightofHome - 80)){
+       $("#h").addClass('selected');
+       $("#a").removeClass('selected');
+       $("#p").removeClass('selected');
+       $("#r").removeClass('selected');
+       $("#c").removeClass('selected');
+    }
+    if($(window).scrollTop() > (topofAbout + heightofAbout - 80)){
+       $("#a").addClass('selected');
+       $("#h").removeClass('selected');
+       $("#p").removeClass('selected');
+       $("#r").removeClass('selected');
+       $("#c").removeClass('selected');
+    }
+    if($(window).scrollTop() > (topofPortfolio + heightofPortfolio + 600)){
+       $("#p").addClass('selected');
+       $("#h").removeClass('selected');
+       $("#a").removeClass('selected');
+       $("#r").removeClass('selected');
+       $("#c").removeClass('selected');
+    }
+    if($(window).scrollTop() > (topofResume + heightofResume + 1200)){
+       $("#r").addClass('selected');
+       $("#h").removeClass('selected');
+       $("#a").removeClass('selected');
+       $("#p").removeClass('selected');
+       $("#c").removeClass('selected');
+    }
+    if($(window).scrollTop() > (topofContact + heightofContact + 1800)){
+       $("#c").addClass('selected');
+       $("#h").removeClass('selected');
+       $("#a").removeClass('selected');
+       $("#p").removeClass('selected');
+       $("#r").removeClass('selected');
+    }
+});
 
 // navbar sticky 
 var nb = $(".navbar");
