@@ -1,5 +1,5 @@
 body {
-min-width: 320px;
+	min-width: 320px;
 }
 
 header{
@@ -8,6 +8,10 @@ header{
 
 li{
 	list-style: none;
+}
+
+section h1{
+	font-family: courier new;
 }
 
 .hero-unit {
@@ -56,16 +60,17 @@ li{
 	padding: 80px 80px 80px;
 	position: relative;
 	z-index: 100;
+	background-color: #E4D7B1;
 }
 
 #about{
 	height: 100vh;
 }
 
-#work{
+#portfolio{
 	height: 100vh;
 
-	#portfolio{
+	#work{
 		background-color: red;
 	}
 
@@ -78,13 +83,30 @@ li{
 	height: 100vh;
 
 	#resume-frame{
-		max-width: 650px;
+		max-width: 1000px;
 		margin: 0 auto;
 	}
 }
 
 #contact{
-	height: 100vh;
+	height: 80vh;
+}
+
+footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #000;
+  text-align: right;
+  color: #31b0d5;
+  font-size: 0.8em;
+
+  p a:hover{
+  	color: #fff;
+  }
+
 }
 
 /* imports */

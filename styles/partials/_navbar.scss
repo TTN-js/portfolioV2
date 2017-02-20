@@ -1,38 +1,79 @@
 #nav{
 	font-family: courier new;
-/* 	height: 136px;
- */	z-index: 150;
-	background-color: #E4D7B1;
+	height: 55px;
+	z-index: 150;
+	background-color: #000;
 	box-shadow: 0 2px 3px rgba(0,0,0, .4);
-	/* needs to be navs height */
 	text-align: center;
+	padding-top: 12px;
 }
 
 .navbar{
 	position: relative;
 }
 
+nav li {
+	display: inline-block;
+	color: #31b0d5;
+	font-size: 1.2em;
+}
+
+nav a{
+	text-decoration: none !important;
+	color: #31b0d5;
+	padding: 16px;
+}
+
+nav a:hover{
+	color: #ffffff;
+	text-decoration: underline !important;
+}
+
+nav a:focus{
+	color: #ffffff;
+	text-decoration: underline !important;
+	outline: none;
+}
+
+/* connect drop down */
+#connect-drop a{
+	padding-right: 0px;
+}
+
+#connect-content
+{
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.9);
+    min-width: 160px;
+    z-index: 1;
+    padding: 0;
+    padding: 5px;
+    margin-top: 12px;
+    border-radius: 5px;
+
+    ul, ul a{
+    	padding: 0px;
+    	padding: 2px;
+    }
+}
+
+#connect-drop:hover{
+	color: #ffffff;
+	text-decoration: underline !important;
+	cursor: pointer;
+}
+
+
+#connect-drop:hover #connect-content {
+	display: block;
+}
+
+/* sticky nav */
 .main-nav-scrolled{
 	position: fixed;
 	width: 100%;
     top: 0;
     margin-bottom: 136px;
+    height: 55px;
 }
-
-nav li {
-	display: inline-block;
-}
-
-nav a, nav a:visited{
-    color: #31b0d5;
-    text-decoration: none !important;
-    font-size: 1.1em;
-    padding: 16px;
-}
-
-nav a.selected, nav a:hover{
-    color: #ffffff;
-    text-decoration: underline !important;
-}
-
-/* nav ul li a */
