@@ -172,32 +172,46 @@ $( document ).ready(function(){
 //github 
 //my repo
 var myGitRepoURl = "https://api.github.com/users/ttn-js/repos",
-    promiseThomas = $.getJSON(myGitRepoURl);
+    promiseThomas = $.getJSON(myGitRepoURl),
+    github = document.querySelector("#github");
+
+var repoHeader =  '<div id="gh_label"><i class="fa fa-github-alt"></i><h5 style="display: inline;">GitHub Repositories</h5></div>'
+    repoHeader += '<a href="https://github.com/TTN-js" target="_blank">'
+    repoHeader += '<div><img src="images/headshot.png" alt="headshot" style="height:25px; display:inline; border-radius:50%;"><h5>TTN-js</h><div><i class="fa fa-code-fork"></i></div></div></a>'
+    repoHeader += '<span class="divider"></span>'
+
+github.innerHTML = repoHeader;
+
+var repoContainer = '<div id="gh_list" style="height: 60vh; overflow: scroll;"></div>';
+
+github.innerHTML += repoContainer;
+
+var gh_list = document.querySelector("#gh_list");
 
 var showRepo = function(jsonRepo) {
 
     var newHTMLString = "",
         dataArray = jsonRepo; 
 
-    console.log(dataArray);
-    //iterate array, get data 
+    // console.log(dataArray);
     for (var i =  0; i < dataArray.length; i++){
       var singleRepo = dataArray[i];
-      console.log(singleRepo);
+      // console.log(singleRepo);
       newHTMLString += dataObjToHTML(singleRepo);
     }
-    var rightContainer = document.querySelector("#github");
-    rightContainer.innerHTML = newHTMLString;
+    gh_list.innerHTML += newHTMLString;
 }
 
 var dataObjToHTML = function(singleRepo){
 
-  var repoHTML =  '<ul class = "repoBox">' 
-      repoHTML += '<h3 class="repoName">' + "Repository: " + singleRepo.name +'</h3>'
-      repoHTML += '<p class="stargazers">' + singleRepo.stargazers_count +'</p>' 
-      repoHTML += '<p class="language">' + singleRepo.language +'</p>'  
+  var repoHTML  = '<section id="repo_list">' 
+      repoHTML += '<ul class = "repoBox">' 
+      repoHTML += '<p class="repoName">' + singleRepo.name +'</p>'
+      // repoHTML += '<p class="stargazers">' + singleRepo.stargazers_count +'</p>' 
+      // repoHTML += '<p class="language">' + singleRepo.language +'</p>'  
       repoHTML += '<p class="description">' + singleRepo.description +'</p>'
       repoHTML += '</ul>'
+      repoHTML += '</section>'
 
   return repoHTML
 }
