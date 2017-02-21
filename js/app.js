@@ -14,15 +14,6 @@ $(window).scroll(function(){
   }
 });
 
-// nav highlight
-$(window).scroll(function(){
-  $("#h").blur();
-  $("#a").blur();
-  $("#p").blur();
-  $("#r").blur();
-  $("#c").blur();
-});
-
 // scrolling
 $( 'button' ).click(function(){
 	window.scroll({ top: window.innerHeight, left: 0, behavior: 'smooth' });
@@ -42,18 +33,23 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     switch(id) {
         case "#home":
            	window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+            $("#h").blur();
             break;
         case "#about":
-            window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' });         		
+            window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' }); 
+            $("#a").blur();        		
             break;
         case "#portfolio":
             window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' });
+            $("#p").blur();
             break;
         case "#resume":
             window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' });
+            $("#r").blur();
             break;
         case "#contact":
             window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' });
+            $("#c").blur();
             break;
         default:
             window.scroll({ top: 0, left: 0, behavior: 'smooth' });
@@ -170,30 +166,28 @@ $( document ).ready(function(){
 
 
 //github 
-//my repo
-var myGitRepoURl = "https://api.github.com/users/ttn-js/repos",
+var myGitRepoURl = "https://api.github.com/users/ttn-js/repos?sort=updated",
     promiseThomas = $.getJSON(myGitRepoURl),
     github = document.querySelector("#github");
-
-var repoHeader =  '<div id="gh_label"><i class="fa fa-github-alt"></i><h5 style="display: inline;">GitHub Repositories</h5></div>'
-    repoHeader += '<a href="https://github.com/TTN-js" target="_blank">'
-    repoHeader += '<div><img src="images/headshot.png" alt="headshot" style="height:25px; display:inline; border-radius:50%;"><h5>TTN-js</h><div><i class="fa fa-code-fork"></i></div></div></a>'
-    repoHeader += '<span class="divider"></span>'
-
-github.innerHTML = repoHeader;
-
-var repoContainer = '<div id="gh_list" style="height: 60vh; overflow: scroll;"></div>';
-
-github.innerHTML += repoContainer;
-
-var gh_list = document.querySelector("#gh_list");
 
 var showRepo = function(jsonRepo) {
 
     var newHTMLString = "",
         dataArray = jsonRepo; 
 
-    // console.log(dataArray);
+    var repoHeader =  '<div id="gh_label" style="text-align:center;"><i class="fa fa-github-alt fa-2x"></i><h4 style="display: inline; padding:0.5em;">GitHub Repositories</h4></div>'
+        repoHeader += '<a href="https://github.com/TTN-js" target="_blank">'
+        repoHeader += '<span class="divider" style="margin-top:10px; margin-bottom:0px;"></span>'
+
+    github.innerHTML = repoHeader;
+
+    var repoContainer = '<div id="gh_list" style="height: 70vh; overflow: scroll;"></div>';
+
+    github.innerHTML += repoContainer;
+
+    var gh_list = document.querySelector("#gh_list");
+
+    console.log(dataArray);
     for (var i =  0; i < dataArray.length; i++){
       var singleRepo = dataArray[i];
       // console.log(singleRepo);
@@ -205,11 +199,11 @@ var showRepo = function(jsonRepo) {
 var dataObjToHTML = function(singleRepo){
 
   var repoHTML  = '<section id="repo_list">' 
-      repoHTML += '<ul class = "repoBox">' 
-      repoHTML += '<p class="repoName">' + singleRepo.name +'</p>'
-      // repoHTML += '<p class="stargazers">' + singleRepo.stargazers_count +'</p>' 
-      // repoHTML += '<p class="language">' + singleRepo.language +'</p>'  
-      repoHTML += '<p class="description">' + singleRepo.description +'</p>'
+      repoHTML += '<ul class="repoBox" style="padding:7px; margin-top:5px; margin-bottom:5px; background-color:rgba(0,0,0,0.2); border-radius:5px;">' 
+      repoHTML += '<a href="'+singleRepo.clone_url+'" target="_blank">'
+      repoHTML += '<p class="repoName" style="font-size:15px; margin-bottom:7px;">' + singleRepo.name +'</p>'
+      repoHTML += '</a>'
+      repoHTML += '<p class="description" style="margin-bottom:0px; font-size:12px">' + singleRepo.description +'</p>'
       repoHTML += '</ul>'
       repoHTML += '</section>'
 

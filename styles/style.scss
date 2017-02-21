@@ -109,12 +109,59 @@ section h1{
 #portfolio{
 	height: 100vh;
 
-	#work{
-		/* background-color: red; */
+	#gallery{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		img{
+		    width:100%;
+		    height: 25vh;
+		}
+	}
+
+	#gallery li {
+	    float: left;
+	    width: 30%;
+	    margin: 1%;
+	    background-color: rgba(0,0,0,0.2);
+	    color: #07C;
+	    border-radius: 5px;
+	    text-align: center;
+	}
+
+	#gallery li a:hover{
+		color: #fff;
+
+		p{
+			color:#fff;
+		}
+	}
+
+	#gallery li a:focus{
+		outline: none;
+		color: #07C;
+		text-decoration: none;
+	}
+
+	#gallery li a p{
+	    margin: 0;
+	    padding: 5%;
+	    font-size: 0.9em;
+	    color: #07C;
 	}
 
 	#github{
-		/* background-color: blue; */
+		padding-right:25px;
+
+		.repoBox a:hover{
+			color: #fff;
+		}
+		.repoBox a:focus{
+			outline: none;
+			color: #07C;
+			text-decoration: none;
+		}
 	}
 }
 
