@@ -1,13 +1,27 @@
-// // jQuery check
-// window.onload = function() {
-//     if (window.jQuery) {  
-//         // jQuery is loaded  
-//         alert("Yeah!");
-//     } else {
-//         // jQuery is not loaded
-//         alert("Doesn't Work");
-//     }
-// }
+// jQuery check
+console.log($);
+
+// navbar sticky 
+var nb = $(".navbar");
+
+$(window).scroll(function(){
+  if($(this).scrollTop() > window.innerHeight - 1){
+    nb.removeClass("navbar");
+    nb.addClass("main-nav-scrolled");
+  } else {
+    nb.removeClass("main-nav-scrolled");
+    nb.addClass("navbar");
+  }
+});
+
+// nav highlight
+$(window).scroll(function(){
+  $("#h").blur();
+  $("#a").blur();
+  $("#p").blur();
+  $("#r").blur();
+  $("#c").blur();
+});
 
 // scrolling
 $( 'button' ).click(function(){
@@ -44,15 +58,6 @@ $(document).on('click', 'a[href^="#"]', function(e) {
         default:
             window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     } 
-});
-
-// nav highlight
-$(window).scroll(function(){
-	$("#h").blur();
-	$("#a").blur();
-	$("#p").blur();
-	$("#r").blur();
-	$("#c").blur();
 });
 
 var about = new Waypoint({
@@ -135,19 +140,14 @@ var contact = new Waypoint({
   offset: 150
 });
 
-
-// navbar sticky 
-var nb = $(".navbar");
-
-$(window).scroll(function(){
-	if($(this).scrollTop() > window.innerHeight - 1){
-		nb.removeClass("navbar");
-		nb.addClass("main-nav-scrolled");
-	} else {
-		nb.removeClass("main-nav-scrolled");
-		nb.addClass("navbar");
-	}
+// scroll to the top
+$( '.back-to-top' ).click(function(){
+  window.scroll({ top: 0, left: 0, behavior: 'smooth' });
 });
+// scroll to top in refresh
+// $(window).on('beforeunload', function() {
+//     $(window).scrollTop(0);
+// });
 
 // type it out
 var inputBox = document.querySelector("#mytypingText"),
@@ -164,16 +164,44 @@ var frameLoop = function() {
     var loopTimer = setTimeout("frameLoop()", 90)
 }
 
-// onload
 $( document ).ready(function(){
 	frameLoop();
 });
-	
-// scroll to the top
-$( '.back-to-top' ).click(function(){
-	window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-});
-// scroll to top in refresh
-// $(window).on('beforeunload', function() {
-//     $(window).scrollTop(0);
-// });
+
+
+//github 
+//my repo
+var myGitRepoURl = "https://api.github.com/users/ttn-js/repos",
+    promiseThomas = $.getJSON(myGitRepoURl);
+
+var showRepo = function(jsonRepo) {
+
+    var newHTMLString = "",
+        dataArray = jsonRepo; 
+
+    console.log(dataArray);
+    //iterate array, get data 
+    for (var i =  0; i < dataArray.length; i++){
+      var singleRepo = dataArray[i];
+      console.log(singleRepo);
+      newHTMLString += dataObjToHTML(singleRepo);
+    }
+    var rightContainer = document.querySelector("#github");
+    rightContainer.innerHTML = newHTMLString;
+}
+
+var dataObjToHTML = function(singleRepo){
+
+  var repoHTML =  '<ul class = "repoBox">' 
+      repoHTML += '<h3 class="repoName">' + "Repository: " + singleRepo.name +'</h3>'
+      repoHTML += '<p class="stargazers">' + singleRepo.stargazers_count +'</p>' 
+      repoHTML += '<p class="language">' + singleRepo.language +'</p>'  
+      repoHTML += '<p class="description">' + singleRepo.description +'</p>'
+      repoHTML += '</ul>'
+
+  return repoHTML
+}
+
+promiseThomas.then(showRepo) 
+
+
