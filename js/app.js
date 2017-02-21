@@ -174,6 +174,6 @@ $( '.back-to-top' ).click(function(){
 	window.scroll({ top: 0, left: 0, behavior: 'smooth' });
 });
 // scroll to top in refresh
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-});
+// $(window).on('beforeunload', function() {
+//     $(window).scrollTop(0);
+// });
