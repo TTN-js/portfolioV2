@@ -149,43 +149,38 @@
 				</div>
 		   	</section>
 
+		   	<!-- contact -->
 		   	<section id="contact">
 				<h1>contact</h1>
 				<span class="divider"></span>
 				<br>
-				<div id="email_container">
-					<form id="email_form">
-						<h2>Say Hello!</h2>
-						<!-- error -->
-						<fieldset>
-							<div id="email_status" class=""></div>
-							<!-- .success .error -->
-						</fieldset>
-						<!-- email -->
-						<fieldset>
-							<label for="email">Email:</label>
-							<input type="text" name="email" id="email" placeholder="example@example.com">
-						</fieldset>
-						<!-- subject -->
-						<fieldset>
-							<label for="subject">Subject:</label>
-							<input type="text" name="subject" id="subject" placeholder="Type your message here">
-						</fieldset>
-						<!-- message -->
-						<fieldset>
-							<label for="email_message">Message:</label>
-							<textarea id="email_message" placeholder="Type your message here"></textarea>
-						</fieldset>
-						<!-- email validation -->
-						<fieldset >
-							<label for="email_validation">Human Verification:</label>
-							<p id="math">
-								2 + 3 =
-								<input type="text" name="email_validation" id="email_validation">
-								<input type="submit" value="submit" id="submitButton">
-							</p>
-						</fieldset>
-					</form>
+				<div id="email_container" class="row" style="padding-left: 30px; margin: 0 auto;">
+				    <div class="row" style="width: 100%;">
+				      	<div style="margin: 0 auto; width: 50%;">
+					        <form role="form" action="http://formspree.io/ttn.js001@gmail.com" method="POST" style="width: 100%;">
+					         	<input type="hidden" name="_next" value="//opthomas.win/thanks.html" />
+					          	<input type="hidden" name="_subject" value="New submission!" />
+					          	<input type="text" name="_gotcha" style="display:none" />
+					          	<div class="form-group">
+					            	<label for="InputName">Name:</label>
+					            	<input type="text" class="form-control" name="name" id="InputName" placeholder="Enter Name" required>
+					          	</div>
+					          	<div class="form-group">
+					            	<label for="InputEmail">Email:</label>
+					            	<input type="email" class="form-control" id="InputEmail" name="_replyto" placeholder="Enter Email" required>
+					          	</div>
+					          	<div class="form-group">
+					            	<label for="InputMessage">Message:</label>
+					            	<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+					          	</div>
+					          	<div class="form-group">
+					            	<label for="InputReal">What is 4+3? (Human Verification)</label>
+					            	<input type="text" class="form-control" name="InputReal" id="InputReal" required>
+					          	</div>
+					          	<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right"> 
+					      	</form>
+				      	</div>
+				    </div>
 				</div>
 				
 				<!-- back to top button -->
