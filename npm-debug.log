@@ -1,0 +1,2038 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.5.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mkdirp' ]
+2 info using npm@3.5.3
+3 info using node@v5.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData mkdirp
+8 silly fetchNamedPackageData mkdirp
+9 silly mapToRegistry name mkdirp
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+13 verbose request uri https://registry.npmjs.org/mkdirp
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 11:41:39 PM
+16 verbose request id fcd1895f57b99744
+17 verbose etag W/"58abbeab-61c3"
+18 verbose lastModified Tue, 21 Feb 2017 04:14:35 GMT
+19 http request GET https://registry.npmjs.org/mkdirp
+20 http 304 https://registry.npmjs.org/mkdirp
+21 verbose headers { date: 'Wed, 22 Feb 2017 05:41:39 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: 'W/"58abbeab-61c3"',
+21 verbose headers   age: '76',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-dfw1831-DFW',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '2',
+21 verbose headers   'x-timer': 'S1487742099.601960,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Wed, 22 Feb 2017 05:41:39 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: 'W/"58abbeab-61c3"',
+22 silly get     age: '76',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-dfw1831-DFW',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '2',
+22 silly get     'x-timer': 'S1487742099.601960,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/mkdirp from cache
+24 verbose get saving mkdirp to /Users/ttn_js/.npm/registry.npmjs.org/mkdirp/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule mkdirp@0.5.1 checking installable status
+38 silly cache add args [ 'mkdirp', null ]
+39 verbose cache add spec mkdirp
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'mkdirp',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'mkdirp',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed mkdirp@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for mkdirp
+43 info addNameTag [ 'mkdirp', 'latest' ]
+44 silly mapToRegistry name mkdirp
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+48 verbose addNameTag registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+49 verbose get https://registry.npmjs.org/mkdirp not expired, no request
+50 silly addNameTag next cb for mkdirp with tag latest
+51 silly addNamed mkdirp@0.5.1
+52 verbose addNamed "0.5.1" is a plain semver version for mkdirp
+53 silly cache afterAdd mkdirp@0.5.1
+54 verbose afterAdd /Users/ttn_js/.npm/mkdirp/0.5.1/package/package.json not in flight; writing
+55 verbose afterAdd /Users/ttn_js/.npm/mkdirp/0.5.1/package/package.json written
+56 silly fetchNamedPackageData minimist
+57 silly mapToRegistry name minimist
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/minimist
+61 verbose request uri https://registry.npmjs.org/minimist
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 11:41:40 PM
+64 verbose etag W/"58ac52c2-73ae"
+65 verbose lastModified Tue, 21 Feb 2017 14:46:26 GMT
+66 http request GET https://registry.npmjs.org/minimist
+67 http 304 https://registry.npmjs.org/minimist
+68 verbose headers { date: 'Wed, 22 Feb 2017 05:41:40 GMT',
+68 verbose headers   via: '1.1 varnish',
+68 verbose headers   'cache-control': 'max-age=300',
+68 verbose headers   etag: 'W/"58ac52c2-73ae"',
+68 verbose headers   age: '65',
+68 verbose headers   connection: 'keep-alive',
+68 verbose headers   'x-served-by': 'cache-dfw1826-DFW',
+68 verbose headers   'x-cache': 'HIT',
+68 verbose headers   'x-cache-hits': '2',
+68 verbose headers   'x-timer': 'S1487742100.159807,VS0,VE0',
+68 verbose headers   vary: 'Accept-Encoding' }
+69 silly get cb [ 304,
+69 silly get   { date: 'Wed, 22 Feb 2017 05:41:40 GMT',
+69 silly get     via: '1.1 varnish',
+69 silly get     'cache-control': 'max-age=300',
+69 silly get     etag: 'W/"58ac52c2-73ae"',
+69 silly get     age: '65',
+69 silly get     connection: 'keep-alive',
+69 silly get     'x-served-by': 'cache-dfw1826-DFW',
+69 silly get     'x-cache': 'HIT',
+69 silly get     'x-cache-hits': '2',
+69 silly get     'x-timer': 'S1487742100.159807,VS0,VE0',
+69 silly get     vary: 'Accept-Encoding' } ]
+70 verbose etag https://registry.npmjs.org/minimist from cache
+71 verbose get saving minimist to /Users/ttn_js/.npm/registry.npmjs.org/minimist/.cache.json
+72 silly resolveWithNewModule minimist@0.0.8 checking installable status
+73 silly cache add args [ 'minimist@0.0.8', null ]
+74 verbose cache add spec minimist@0.0.8
+75 silly cache add parsed spec Result {
+75 silly cache add   raw: 'minimist@0.0.8',
+75 silly cache add   scope: null,
+75 silly cache add   name: 'minimist',
+75 silly cache add   rawSpec: '0.0.8',
+75 silly cache add   spec: '0.0.8',
+75 silly cache add   type: 'version' }
+76 silly addNamed minimist@0.0.8
+77 verbose addNamed "0.0.8" is a plain semver version for minimist
+78 silly mapToRegistry name minimist
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/minimist
+82 verbose addNameVersion registry:https://registry.npmjs.org/minimist not in flight; fetching
+83 verbose get https://registry.npmjs.org/minimist not expired, no request
+84 silly cache afterAdd minimist@0.0.8
+85 verbose afterAdd /Users/ttn_js/.npm/minimist/0.0.8/package/package.json not in flight; writing
+86 verbose afterAdd /Users/ttn_js/.npm/minimist/0.0.8/package/package.json written
+87 silly loadAllDepsIntoIdealTree Finishing
+88 silly idealTree:prePrune portfolio_v2@1.0.0
+88 silly idealTree:prePrune ├── ansi-regex@2.1.1
+88 silly idealTree:prePrune ├── ansi-styles@2.2.1
+88 silly idealTree:prePrune ├── archy@1.0.0
+88 silly idealTree:prePrune ├── arr-diff@2.0.0
+88 silly idealTree:prePrune ├── arr-flatten@1.0.1
+88 silly idealTree:prePrune ├── array-differ@1.0.0
+88 silly idealTree:prePrune ├── array-uniq@1.0.3
+88 silly idealTree:prePrune ├── array-unique@0.2.1
+88 silly idealTree:prePrune ├── balanced-match@0.4.2
+88 silly idealTree:prePrune ├── beeper@1.1.1
+88 silly idealTree:prePrune ├── brace-expansion@1.1.6
+88 silly idealTree:prePrune ├── buffer-shims@1.0.0
+88 silly idealTree:prePrune ├── clone-stats@0.0.1
+88 silly idealTree:prePrune ├── clone@1.0.2
+88 silly idealTree:prePrune ├── concat-map@0.0.1
+88 silly idealTree:prePrune ├── convert-source-map@1.4.0
+88 silly idealTree:prePrune ├── core-util-is@1.0.2
+88 silly idealTree:prePrune ├─┬ cross-spawn@5.0.1
+88 silly idealTree:prePrune │ ├─┬ lru-cache@4.0.2
+88 silly idealTree:prePrune │ │ ├── pseudomap@1.0.2
+88 silly idealTree:prePrune │ │ └── yallist@2.0.0
+88 silly idealTree:prePrune │ ├─┬ shebang-command@1.2.0
+88 silly idealTree:prePrune │ │ └── shebang-regex@1.0.0
+88 silly idealTree:prePrune │ └─┬ which@1.2.12
+88 silly idealTree:prePrune │   └── isexe@1.1.2
+88 silly idealTree:prePrune ├── dargs
+88 silly idealTree:prePrune ├── dateformat
+88 silly idealTree:prePrune ├── defaults
+88 silly idealTree:prePrune ├── deprecated
+88 silly idealTree:prePrune ├── detect-file
+88 silly idealTree:prePrune ├── duplexer2
+88 silly idealTree:prePrune ├── each-async
+88 silly idealTree:prePrune ├── end-of-stream
+88 silly idealTree:prePrune ├── escape-string-regexp
+88 silly idealTree:prePrune ├── expand-brackets
+88 silly idealTree:prePrune ├── expand-range
+88 silly idealTree:prePrune ├── expand-tilde
+88 silly idealTree:prePrune ├── extend
+88 silly idealTree:prePrune ├── extglob
+88 silly idealTree:prePrune ├── fancy-log
+88 silly idealTree:prePrune ├── filename-regex
+88 silly idealTree:prePrune ├── fill-range
+88 silly idealTree:prePrune ├── find-index
+88 silly idealTree:prePrune ├── findup-sync
+88 silly idealTree:prePrune ├── fined
+88 silly idealTree:prePrune ├── first-chunk-stream
+88 silly idealTree:prePrune ├── flagged-respawn
+88 silly idealTree:prePrune ├── font-awesome@4.7.0
+88 silly idealTree:prePrune ├── for-in
+88 silly idealTree:prePrune ├── for-own
+88 silly idealTree:prePrune ├── fs-exists-sync
+88 silly idealTree:prePrune ├── fs.realpath
+88 silly idealTree:prePrune ├── gaze
+88 silly idealTree:prePrune ├── glob
+88 silly idealTree:prePrune ├── glob-base
+88 silly idealTree:prePrune ├── glob-parent
+88 silly idealTree:prePrune ├─┬ glob-stream@3.1.18
+88 silly idealTree:prePrune │ ├─┬ glob@4.5.3
+88 silly idealTree:prePrune │ │ ├── inflight@1.0.6
+88 silly idealTree:prePrune │ │ ├── inherits@2.0.3
+88 silly idealTree:prePrune │ │ ├── once@1.4.0
+88 silly idealTree:prePrune │ │ └── wrappy@1.0.2
+88 silly idealTree:prePrune │ ├─┬ glob2base@0.0.12
+88 silly idealTree:prePrune │ │ └── find-index@0.1.1
+88 silly idealTree:prePrune │ ├── minimatch@2.0.10
+88 silly idealTree:prePrune │ ├── ordered-read-streams@0.1.0
+88 silly idealTree:prePrune │ ├─┬ readable-stream@1.0.34
+88 silly idealTree:prePrune │ │ ├── inherits@2.0.3
+88 silly idealTree:prePrune │ │ ├── isarray@0.0.1
+88 silly idealTree:prePrune │ │ └── string_decoder@0.10.31
+88 silly idealTree:prePrune │ ├─┬ through2@0.6.5
+88 silly idealTree:prePrune │ │ └── xtend@4.0.1
+88 silly idealTree:prePrune │ └── unique-stream@1.0.0
+88 silly idealTree:prePrune ├── glob-watcher
+88 silly idealTree:prePrune ├── glob2base
+88 silly idealTree:prePrune ├── global-modules
+88 silly idealTree:prePrune ├── global-prefix
+88 silly idealTree:prePrune ├─┬ globule@0.1.0
+88 silly idealTree:prePrune │ ├── glob@3.1.21
+88 silly idealTree:prePrune │ ├── graceful-fs@1.2.3
+88 silly idealTree:prePrune │ ├── inherits@1.0.2
+88 silly idealTree:prePrune │ ├── lodash@1.0.2
+88 silly idealTree:prePrune │ └─┬ minimatch@0.2.14
+88 silly idealTree:prePrune │   ├── lru-cache@2.7.3
+88 silly idealTree:prePrune │   └── sigmund@1.0.1
+88 silly idealTree:prePrune ├── glogg
+88 silly idealTree:prePrune ├── graceful-fs
+88 silly idealTree:prePrune ├─┬ gulp-plumber@1.1.0
+88 silly idealTree:prePrune │ ├── chalk@1.1.3
+88 silly idealTree:prePrune │ ├── dateformat@2.0.0
+88 silly idealTree:prePrune │ ├── duplexer2@0.0.2
+88 silly idealTree:prePrune │ ├── escape-string-regexp@1.0.5
+88 silly idealTree:prePrune │ ├── fancy-log@1.3.0
+88 silly idealTree:prePrune │ ├── glogg@1.0.0
+88 silly idealTree:prePrune │ ├── gulp-util@3.0.8
+88 silly idealTree:prePrune │ ├── gulplog@1.0.0
+88 silly idealTree:prePrune │ ├── has-ansi@2.0.0
+88 silly idealTree:prePrune │ ├── has-gulplog@0.1.0
+88 silly idealTree:prePrune │ ├── inherits@2.0.3
+88 silly idealTree:prePrune │ ├── isarray@0.0.1
+88 silly idealTree:prePrune │ ├── lodash._basecopy@3.0.1
+88 silly idealTree:prePrune │ ├── lodash._basetostring@3.0.1
+88 silly idealTree:prePrune │ ├── lodash._basevalues@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._getnative@3.9.1
+88 silly idealTree:prePrune │ ├── lodash._isiterateecall@3.0.9
+88 silly idealTree:prePrune │ ├── lodash._reescape@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._reevaluate@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._reinterpolate@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._root@3.0.1
+88 silly idealTree:prePrune │ ├── lodash.escape@3.2.0
+88 silly idealTree:prePrune │ ├── lodash.isarguments@3.1.0
+88 silly idealTree:prePrune │ ├── lodash.isarray@3.0.4
+88 silly idealTree:prePrune │ ├── lodash.keys@3.1.2
+88 silly idealTree:prePrune │ ├── lodash.restparam@3.6.1
+88 silly idealTree:prePrune │ ├── lodash.template@3.6.2
+88 silly idealTree:prePrune │ ├── lodash.templatesettings@3.1.1
+88 silly idealTree:prePrune │ ├── minimist@1.2.0
+88 silly idealTree:prePrune │ ├── multipipe@0.1.2
+88 silly idealTree:prePrune │ ├── object-assign@3.0.0
+88 silly idealTree:prePrune │ ├── process-nextick-args@1.0.7
+88 silly idealTree:prePrune │ ├── readable-stream@1.1.14
+88 silly idealTree:prePrune │ ├── replace-ext@0.0.1
+88 silly idealTree:prePrune │ ├── sparkles@1.0.0
+88 silly idealTree:prePrune │ ├── string_decoder@0.10.31
+88 silly idealTree:prePrune │ ├── strip-ansi@3.0.1
+88 silly idealTree:prePrune │ ├── supports-color@2.0.0
+88 silly idealTree:prePrune │ ├─┬ through2@2.0.3
+88 silly idealTree:prePrune │ │ ├── isarray@1.0.0
+88 silly idealTree:prePrune │ │ └── readable-stream@2.2.3
+88 silly idealTree:prePrune │ ├── time-stamp@1.0.1
+88 silly idealTree:prePrune │ ├── util-deprecate@1.0.2
+88 silly idealTree:prePrune │ ├── vinyl@0.5.3
+88 silly idealTree:prePrune │ └── xtend@4.0.1
+88 silly idealTree:prePrune ├─┬ gulp-ruby-sass@2.1.1
+88 silly idealTree:prePrune │ ├── chalk@1.1.3
+88 silly idealTree:prePrune │ ├── cross-spawn@5.0.1
+88 silly idealTree:prePrune │ ├── dargs@2.1.0
+88 silly idealTree:prePrune │ ├── dateformat@2.0.0
+88 silly idealTree:prePrune │ ├── duplexer2@0.0.2
+88 silly idealTree:prePrune │ ├── each-async@1.1.1
+88 silly idealTree:prePrune │ ├── escape-string-regexp@1.0.5
+88 silly idealTree:prePrune │ ├── fancy-log@1.3.0
+88 silly idealTree:prePrune │ ├── find-index@0.1.1
+88 silly idealTree:prePrune │ ├─┬ glob@7.1.1
+88 silly idealTree:prePrune │ │ ├── fs.realpath@1.0.0
+88 silly idealTree:prePrune │ │ ├─┬ inflight@1.0.6
+88 silly idealTree:prePrune │ │ │ └── wrappy@1.0.2
+88 silly idealTree:prePrune │ │ ├── inherits@2.0.3
+88 silly idealTree:prePrune │ │ ├─┬ once@1.4.0
+88 silly idealTree:prePrune │ │ │ └── wrappy@1.0.2
+88 silly idealTree:prePrune │ │ └── path-is-absolute@1.0.1
+88 silly idealTree:prePrune │ ├── glob2base@0.0.12
+88 silly idealTree:prePrune │ ├── glogg@1.0.0
+88 silly idealTree:prePrune │ ├─┬ gulp-util@3.0.8
+88 silly idealTree:prePrune │ │ └── object-assign@3.0.0
+88 silly idealTree:prePrune │ ├── gulplog@1.0.0
+88 silly idealTree:prePrune │ ├── has-ansi@2.0.0
+88 silly idealTree:prePrune │ ├── has-gulplog@0.1.0
+88 silly idealTree:prePrune │ ├── inherits@2.0.3
+88 silly idealTree:prePrune │ ├── isarray@0.0.1
+88 silly idealTree:prePrune │ ├── isexe@1.1.2
+88 silly idealTree:prePrune │ ├── lodash._basecopy@3.0.1
+88 silly idealTree:prePrune │ ├── lodash._basetostring@3.0.1
+88 silly idealTree:prePrune │ ├── lodash._basevalues@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._getnative@3.9.1
+88 silly idealTree:prePrune │ ├── lodash._isiterateecall@3.0.9
+88 silly idealTree:prePrune │ ├── lodash._reescape@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._reevaluate@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._reinterpolate@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._root@3.0.1
+88 silly idealTree:prePrune │ ├── lodash.escape@3.2.0
+88 silly idealTree:prePrune │ ├── lodash.isarguments@3.1.0
+88 silly idealTree:prePrune │ ├── lodash.isarray@3.0.4
+88 silly idealTree:prePrune │ ├── lodash.keys@3.1.2
+88 silly idealTree:prePrune │ ├── lodash.restparam@3.6.1
+88 silly idealTree:prePrune │ ├── lodash.template@3.6.2
+88 silly idealTree:prePrune │ ├── lodash.templatesettings@3.1.1
+88 silly idealTree:prePrune │ ├── lru-cache@4.0.2
+88 silly idealTree:prePrune │ ├── md5-hex@1.3.0
+88 silly idealTree:prePrune │ ├── md5-o-matic@0.1.1
+88 silly idealTree:prePrune │ ├─┬ minimatch@3.0.3
+88 silly idealTree:prePrune │ │ └─┬ brace-expansion@1.1.6
+88 silly idealTree:prePrune │ │   ├── balanced-match@0.4.2
+88 silly idealTree:prePrune │ │   └── concat-map@0.0.1
+88 silly idealTree:prePrune │ ├── minimist@1.2.0
+88 silly idealTree:prePrune │ ├── multipipe@0.1.2
+88 silly idealTree:prePrune │ ├── object-assign@4.1.1
+88 silly idealTree:prePrune │ ├── onetime@1.1.0
+88 silly idealTree:prePrune │ ├── os-tmpdir@1.0.2
+88 silly idealTree:prePrune │ ├── path-exists@2.1.0
+88 silly idealTree:prePrune │ ├── pinkie-promise@2.0.1
+88 silly idealTree:prePrune │ ├── pinkie@2.0.4
+88 silly idealTree:prePrune │ ├── pseudomap@1.0.2
+88 silly idealTree:prePrune │ ├── readable-stream@1.1.14
+88 silly idealTree:prePrune │ ├── replace-ext@0.0.1
+88 silly idealTree:prePrune │ ├── set-immediate-shim@1.0.1
+88 silly idealTree:prePrune │ ├── shebang-command@1.2.0
+88 silly idealTree:prePrune │ ├── shebang-regex@1.0.0
+88 silly idealTree:prePrune │ ├── sparkles@1.0.0
+88 silly idealTree:prePrune │ ├── string_decoder@0.10.31
+88 silly idealTree:prePrune │ ├── strip-ansi@3.0.1
+88 silly idealTree:prePrune │ ├── supports-color@2.0.0
+88 silly idealTree:prePrune │ ├── time-stamp@1.0.1
+88 silly idealTree:prePrune │ ├── vinyl@0.5.3
+88 silly idealTree:prePrune │ ├── which@1.2.12
+88 silly idealTree:prePrune │ └── yallist@2.0.0
+88 silly idealTree:prePrune ├─┬ gulp@3.9.1
+88 silly idealTree:prePrune │ ├── braces@1.8.5
+88 silly idealTree:prePrune │ ├── chalk@1.1.3
+88 silly idealTree:prePrune │ ├── dateformat@2.0.0
+88 silly idealTree:prePrune │ ├── defaults@1.0.3
+88 silly idealTree:prePrune │ ├── deprecated@0.0.1
+88 silly idealTree:prePrune │ ├── detect-file@0.1.0
+88 silly idealTree:prePrune │ ├── duplexer2@0.0.2
+88 silly idealTree:prePrune │ ├── end-of-stream@0.1.5
+88 silly idealTree:prePrune │ ├── escape-string-regexp@1.0.5
+88 silly idealTree:prePrune │ ├── expand-brackets@0.1.5
+88 silly idealTree:prePrune │ ├── expand-range@1.8.2
+88 silly idealTree:prePrune │ ├── expand-tilde@1.2.2
+88 silly idealTree:prePrune │ ├── extend@3.0.0
+88 silly idealTree:prePrune │ ├── extglob@0.3.2
+88 silly idealTree:prePrune │ ├── fancy-log@1.3.0
+88 silly idealTree:prePrune │ ├── filename-regex@2.0.0
+88 silly idealTree:prePrune │ ├── fill-range@2.2.3
+88 silly idealTree:prePrune │ ├── findup-sync@0.4.3
+88 silly idealTree:prePrune │ ├── fined@1.0.2
+88 silly idealTree:prePrune │ ├── flagged-respawn@0.3.2
+88 silly idealTree:prePrune │ ├── for-in@0.1.6
+88 silly idealTree:prePrune │ ├── for-own@0.1.4
+88 silly idealTree:prePrune │ ├── fs-exists-sync@0.1.0
+88 silly idealTree:prePrune │ ├── gaze@0.5.2
+88 silly idealTree:prePrune │ ├── glob-base@0.3.0
+88 silly idealTree:prePrune │ ├── glob-parent@2.0.0
+88 silly idealTree:prePrune │ ├── glob-watcher@0.0.6
+88 silly idealTree:prePrune │ ├── global-modules@0.2.3
+88 silly idealTree:prePrune │ ├── global-prefix@0.1.5
+88 silly idealTree:prePrune │ ├── glogg@1.0.0
+88 silly idealTree:prePrune │ ├── graceful-fs@3.0.11
+88 silly idealTree:prePrune │ ├── gulp-util@3.0.8
+88 silly idealTree:prePrune │ ├── gulplog@1.0.0
+88 silly idealTree:prePrune │ ├── has-ansi@2.0.0
+88 silly idealTree:prePrune │ ├── has-gulplog@0.1.0
+88 silly idealTree:prePrune │ ├── homedir-polyfill@1.0.1
+88 silly idealTree:prePrune │ ├── inherits@2.0.3
+88 silly idealTree:prePrune │ ├── ini@1.3.4
+88 silly idealTree:prePrune │ ├── interpret@1.0.1
+88 silly idealTree:prePrune │ ├── is-absolute@0.2.6
+88 silly idealTree:prePrune │ ├── is-buffer@1.1.4
+88 silly idealTree:prePrune │ ├── is-dotfile@1.0.2
+88 silly idealTree:prePrune │ ├── is-equal-shallow@0.1.3
+88 silly idealTree:prePrune │ ├── is-extendable@0.1.1
+88 silly idealTree:prePrune │ ├── is-extglob@1.0.0
+88 silly idealTree:prePrune │ ├── is-glob@2.0.1
+88 silly idealTree:prePrune │ ├── is-number@2.1.0
+88 silly idealTree:prePrune │ ├── is-posix-bracket@0.1.1
+88 silly idealTree:prePrune │ ├── is-primitive@2.0.0
+88 silly idealTree:prePrune │ ├── is-relative@0.2.1
+88 silly idealTree:prePrune │ ├── is-unc-path@0.1.2
+88 silly idealTree:prePrune │ ├── is-windows@0.2.0
+88 silly idealTree:prePrune │ ├── isarray@0.0.1
+88 silly idealTree:prePrune │ ├── isexe@1.1.2
+88 silly idealTree:prePrune │ ├── kind-of@3.1.0
+88 silly idealTree:prePrune │ ├── liftoff@2.3.0
+88 silly idealTree:prePrune │ ├── lodash._basecopy@3.0.1
+88 silly idealTree:prePrune │ ├── lodash._basetostring@3.0.1
+88 silly idealTree:prePrune │ ├── lodash._basevalues@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._getnative@3.9.1
+88 silly idealTree:prePrune │ ├── lodash._isiterateecall@3.0.9
+88 silly idealTree:prePrune │ ├── lodash._reescape@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._reevaluate@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._reinterpolate@3.0.0
+88 silly idealTree:prePrune │ ├── lodash._root@3.0.1
+88 silly idealTree:prePrune │ ├── lodash.assignwith@4.2.0
+88 silly idealTree:prePrune │ ├── lodash.escape@3.2.0
+88 silly idealTree:prePrune │ ├── lodash.isarguments@3.1.0
+88 silly idealTree:prePrune │ ├── lodash.isarray@3.0.4
+88 silly idealTree:prePrune │ ├── lodash.isempty@4.4.0
+88 silly idealTree:prePrune │ ├── lodash.isplainobject@4.0.6
+88 silly idealTree:prePrune │ ├── lodash.isstring@4.0.1
+88 silly idealTree:prePrune │ ├── lodash.keys@3.1.2
+88 silly idealTree:prePrune │ ├── lodash.mapvalues@4.6.0
+88 silly idealTree:prePrune │ ├── lodash.pick@4.4.0
+88 silly idealTree:prePrune │ ├── lodash.restparam@3.6.1
+88 silly idealTree:prePrune │ ├── lodash.template@3.6.2
+88 silly idealTree:prePrune │ ├── lodash.templatesettings@3.1.1
+88 silly idealTree:prePrune │ ├── map-cache@0.2.2
+88 silly idealTree:prePrune │ ├── micromatch@2.3.11
+88 silly idealTree:prePrune │ ├── minimist@1.2.0
+88 silly idealTree:prePrune │ ├─┬ mkdirp@0.5.1
+88 silly idealTree:prePrune │ │ └── minimist@0.0.8
+88 silly idealTree:prePrune │ ├── multipipe@0.1.2
+88 silly idealTree:prePrune │ ├── natives@1.1.0
+88 silly idealTree:prePrune │ ├── normalize-path@2.0.1
+88 silly idealTree:prePrune │ ├── object-assign@3.0.0
+88 silly idealTree:prePrune │ ├── object.omit@2.0.1
+88 silly idealTree:prePrune │ ├── once@1.3.3
+88 silly idealTree:prePrune │ ├── orchestrator@0.3.8
+88 silly idealTree:prePrune │ ├── os-homedir@1.0.2
+88 silly idealTree:prePrune │ ├── parse-filepath@1.0.1
+88 silly idealTree:prePrune │ ├── parse-glob@3.0.4
+88 silly idealTree:prePrune │ ├── parse-passwd@1.0.0
+88 silly idealTree:prePrune │ ├── path-root-regex@0.1.2
+88 silly idealTree:prePrune │ ├── path-root@0.1.1
+88 silly idealTree:prePrune │ ├── preserve@0.2.0
+88 silly idealTree:prePrune │ ├── pretty-hrtime@1.0.3
+88 silly idealTree:prePrune │ ├── randomatic@1.1.6
+88 silly idealTree:prePrune │ ├── readable-stream@1.1.14
+88 silly idealTree:prePrune │ ├── rechoir@0.6.2
+88 silly idealTree:prePrune │ ├── regex-cache@0.4.3
+88 silly idealTree:prePrune │ ├── repeat-element@1.1.2
+88 silly idealTree:prePrune │ ├── repeat-string@1.6.1
+88 silly idealTree:prePrune │ ├── replace-ext@0.0.1
+88 silly idealTree:prePrune │ ├── resolve-dir@0.1.1
+88 silly idealTree:prePrune │ ├── resolve@1.2.0
+88 silly idealTree:prePrune │ ├── semver@4.3.6
+88 silly idealTree:prePrune │ ├── sequencify@0.0.7
+88 silly idealTree:prePrune │ ├── sparkles@1.0.0
+88 silly idealTree:prePrune │ ├── stream-consume@0.1.0
+88 silly idealTree:prePrune │ ├── string_decoder@0.10.31
+88 silly idealTree:prePrune │ ├── strip-ansi@3.0.1
+88 silly idealTree:prePrune │ ├── supports-color@2.0.0
+88 silly idealTree:prePrune │ ├── tildify@1.2.0
+88 silly idealTree:prePrune │ ├── time-stamp@1.0.1
+88 silly idealTree:prePrune │ ├── unc-path-regex@0.1.2
+88 silly idealTree:prePrune │ ├── user-home@1.1.1
+88 silly idealTree:prePrune │ ├── v8flags@2.0.11
+88 silly idealTree:prePrune │ ├─┬ vinyl-fs@0.3.14
+88 silly idealTree:prePrune │ │ ├── clone@0.2.0
+88 silly idealTree:prePrune │ │ ├── readable-stream@1.0.34
+88 silly idealTree:prePrune │ │ ├── through2@0.6.5
+88 silly idealTree:prePrune │ │ └── vinyl@0.4.6
+88 silly idealTree:prePrune │ ├── vinyl@0.5.3
+88 silly idealTree:prePrune │ ├── which@1.2.12
+88 silly idealTree:prePrune │ ├── wrappy@1.0.2
+88 silly idealTree:prePrune │ └── xtend@4.0.1
+88 silly idealTree:prePrune ├── gulplog
+88 silly idealTree:prePrune ├── has-ansi
+88 silly idealTree:prePrune ├── has-gulplog
+88 silly idealTree:prePrune ├── homedir-polyfill
+88 silly idealTree:prePrune ├── inflight
+88 silly idealTree:prePrune ├── inherits
+88 silly idealTree:prePrune ├── ini
+88 silly idealTree:prePrune ├── interpret
+88 silly idealTree:prePrune ├── is-absolute
+88 silly idealTree:prePrune ├── is-buffer
+88 silly idealTree:prePrune ├── is-dotfile
+88 silly idealTree:prePrune ├── is-equal-shallow
+88 silly idealTree:prePrune ├── is-extendable
+88 silly idealTree:prePrune ├── is-extglob
+88 silly idealTree:prePrune ├── is-glob
+88 silly idealTree:prePrune ├── is-number
+88 silly idealTree:prePrune ├── is-posix-bracket
+88 silly idealTree:prePrune ├── is-primitive
+88 silly idealTree:prePrune ├── is-relative
+88 silly idealTree:prePrune ├── is-unc-path
+88 silly idealTree:prePrune ├── is-utf8
+88 silly idealTree:prePrune ├── is-windows
+88 silly idealTree:prePrune ├── isarray
+88 silly idealTree:prePrune ├── isexe
+88 silly idealTree:prePrune ├─┬ isobject@2.1.0
+88 silly idealTree:prePrune │ └── isarray@1.0.0
+88 silly idealTree:prePrune ├── kind-of
+88 silly idealTree:prePrune ├── liftoff
+88 silly idealTree:prePrune ├── lodash
+88 silly idealTree:prePrune ├── lodash._basecopy
+88 silly idealTree:prePrune ├── lodash._basetostring
+88 silly idealTree:prePrune ├── lodash._basevalues
+88 silly idealTree:prePrune ├── lodash._getnative
+88 silly idealTree:prePrune ├── lodash._isiterateecall
+88 silly idealTree:prePrune ├── lodash._reescape
+88 silly idealTree:prePrune ├── lodash._reevaluate
+88 silly idealTree:prePrune ├── lodash._reinterpolate
+88 silly idealTree:prePrune ├── lodash._root
+88 silly idealTree:prePrune ├── lodash.assignwith
+88 silly idealTree:prePrune ├── lodash.escape
+88 silly idealTree:prePrune ├── lodash.isarguments
+88 silly idealTree:prePrune ├── lodash.isarray
+88 silly idealTree:prePrune ├── lodash.isempty
+88 silly idealTree:prePrune ├── lodash.isplainobject
+88 silly idealTree:prePrune ├── lodash.isstring
+88 silly idealTree:prePrune ├── lodash.keys
+88 silly idealTree:prePrune ├── lodash.mapvalues
+88 silly idealTree:prePrune ├── lodash.pick
+88 silly idealTree:prePrune ├── lodash.restparam
+88 silly idealTree:prePrune ├── lodash.template
+88 silly idealTree:prePrune ├── lodash.templatesettings
+88 silly idealTree:prePrune ├── lru-cache
+88 silly idealTree:prePrune ├── map-cache
+88 silly idealTree:prePrune ├── md5-hex
+88 silly idealTree:prePrune ├── md5-o-matic
+88 silly idealTree:prePrune ├── micromatch
+88 silly idealTree:prePrune ├── minimatch
+88 silly idealTree:prePrune ├── minimist
+88 silly idealTree:prePrune ├─┬ mkdirp@0.5.1
+88 silly idealTree:prePrune │ └── minimist@0.0.8
+88 silly idealTree:prePrune ├── multipipe
+88 silly idealTree:prePrune ├── natives
+88 silly idealTree:prePrune ├── normalize-path
+88 silly idealTree:prePrune ├── normalize.css@5.0.0
+88 silly idealTree:prePrune ├── object-assign
+88 silly idealTree:prePrune ├── object.omit
+88 silly idealTree:prePrune ├── once
+88 silly idealTree:prePrune ├── onetime
+88 silly idealTree:prePrune ├── orchestrator
+88 silly idealTree:prePrune ├── ordered-read-streams
+88 silly idealTree:prePrune ├── os-homedir
+88 silly idealTree:prePrune ├── os-tmpdir
+88 silly idealTree:prePrune ├── parse-filepath
+88 silly idealTree:prePrune ├── parse-glob
+88 silly idealTree:prePrune ├── parse-passwd
+88 silly idealTree:prePrune ├── path-exists
+88 silly idealTree:prePrune ├── path-is-absolute
+88 silly idealTree:prePrune ├── path-root
+88 silly idealTree:prePrune ├── path-root-regex
+88 silly idealTree:prePrune ├── pinkie
+88 silly idealTree:prePrune ├── pinkie-promise
+88 silly idealTree:prePrune ├── preserve
+88 silly idealTree:prePrune ├── pretty-hrtime
+88 silly idealTree:prePrune ├── process-nextick-args
+88 silly idealTree:prePrune ├── pseudomap
+88 silly idealTree:prePrune ├── randomatic
+88 silly idealTree:prePrune ├── readable-stream
+88 silly idealTree:prePrune ├── rechoir
+88 silly idealTree:prePrune ├── regex-cache
+88 silly idealTree:prePrune ├── repeat-element
+88 silly idealTree:prePrune ├── repeat-string
+88 silly idealTree:prePrune ├── replace-ext
+88 silly idealTree:prePrune ├── resolve
+88 silly idealTree:prePrune ├── resolve-dir
+88 silly idealTree:prePrune ├─┬ rimraf@2.6.0
+88 silly idealTree:prePrune │ ├── fs.realpath@1.0.0
+88 silly idealTree:prePrune │ ├── glob@7.1.1
+88 silly idealTree:prePrune │ ├── inflight@1.0.6
+88 silly idealTree:prePrune │ ├── inherits@2.0.3
+88 silly idealTree:prePrune │ ├── minimatch@3.0.3
+88 silly idealTree:prePrune │ ├── once@1.4.0
+88 silly idealTree:prePrune │ ├── path-is-absolute@1.0.1
+88 silly idealTree:prePrune │ └── wrappy@1.0.2
+88 silly idealTree:prePrune ├── semver
+88 silly idealTree:prePrune ├── sequencify
+88 silly idealTree:prePrune ├── set-immediate-shim
+88 silly idealTree:prePrune ├── shebang-command
+88 silly idealTree:prePrune ├── shebang-regex
+88 silly idealTree:prePrune ├── sigmund
+88 silly idealTree:prePrune ├── sparkles
+88 silly idealTree:prePrune ├── stream-consume
+88 silly idealTree:prePrune ├── string_decoder
+88 silly idealTree:prePrune ├── strip-ansi
+88 silly idealTree:prePrune ├─┬ strip-bom@1.0.0
+88 silly idealTree:prePrune │ ├── first-chunk-stream@1.0.0
+88 silly idealTree:prePrune │ └── is-utf8@0.2.1
+88 silly idealTree:prePrune ├── supports-color
+88 silly idealTree:prePrune ├─┬ through2@2.0.3
+88 silly idealTree:prePrune │ ├── inherits@2.0.3
+88 silly idealTree:prePrune │ ├── isarray@1.0.0
+88 silly idealTree:prePrune │ ├── process-nextick-args@1.0.7
+88 silly idealTree:prePrune │ ├── readable-stream@2.2.3
+88 silly idealTree:prePrune │ ├── string_decoder@0.10.31
+88 silly idealTree:prePrune │ ├── util-deprecate@1.0.2
+88 silly idealTree:prePrune │ └── xtend@4.0.1
+88 silly idealTree:prePrune ├── tildify
+88 silly idealTree:prePrune ├── time-stamp
+88 silly idealTree:prePrune ├── unc-path-regex
+88 silly idealTree:prePrune ├── unique-stream
+88 silly idealTree:prePrune ├── util-deprecate
+88 silly idealTree:prePrune ├── v8flags
+88 silly idealTree:prePrune ├── vinyl
+88 silly idealTree:prePrune ├─┬ vinyl-fs@0.3.14
+88 silly idealTree:prePrune │ ├── clone@0.2.0
+88 silly idealTree:prePrune │ ├─┬ defaults@1.0.3
+88 silly idealTree:prePrune │ │ └── clone@1.0.2
+88 silly idealTree:prePrune │ ├── first-chunk-stream@1.0.0
+88 silly idealTree:prePrune │ ├── gaze@0.5.2
+88 silly idealTree:prePrune │ ├── glob-watcher@0.0.6
+88 silly idealTree:prePrune │ ├── graceful-fs@3.0.11
+88 silly idealTree:prePrune │ ├── inherits@2.0.3
+88 silly idealTree:prePrune │ ├── is-utf8@0.2.1
+88 silly idealTree:prePrune │ ├── isarray@0.0.1
+88 silly idealTree:prePrune │ ├── minimist@0.0.8
+88 silly idealTree:prePrune │ ├── mkdirp@0.5.1
+88 silly idealTree:prePrune │ ├── natives@1.1.0
+88 silly idealTree:prePrune │ ├── readable-stream@1.0.34
+88 silly idealTree:prePrune │ ├── string_decoder@0.10.31
+88 silly idealTree:prePrune │ ├── strip-bom@1.0.0
+88 silly idealTree:prePrune │ ├── through2@0.6.5
+88 silly idealTree:prePrune │ ├── vinyl@0.4.6
+88 silly idealTree:prePrune │ └── xtend@4.0.1
+88 silly idealTree:prePrune ├── waypoints@4.0.1
+88 silly idealTree:prePrune ├── which
+88 silly idealTree:prePrune ├── wrappy
+88 silly idealTree:prePrune ├── xtend
+88 silly idealTree:prePrune └── yallist
+89 silly loadIdealTree Finishing
+90 silly currentTree portfolio_v2@1.0.0
+90 silly currentTree ├── ansi-regex@2.1.1
+90 silly currentTree ├── ansi-styles@2.2.1
+90 silly currentTree ├── archy@1.0.0
+90 silly currentTree ├── arr-diff@2.0.0
+90 silly currentTree ├── arr-flatten@1.0.1
+90 silly currentTree ├── array-differ@1.0.0
+90 silly currentTree ├── array-uniq@1.0.3
+90 silly currentTree ├── array-unique@0.2.1
+90 silly currentTree ├── balanced-match@0.4.2
+90 silly currentTree ├── beeper@1.1.1
+90 silly currentTree ├── brace-expansion@1.1.6
+90 silly currentTree ├── buffer-shims@1.0.0
+90 silly currentTree ├── clone-stats@0.0.1
+90 silly currentTree ├── clone@1.0.2
+90 silly currentTree ├── concat-map@0.0.1
+90 silly currentTree ├── convert-source-map@1.4.0
+90 silly currentTree ├── core-util-is@1.0.2
+90 silly currentTree ├─┬ cross-spawn@5.0.1
+90 silly currentTree │ ├─┬ lru-cache@4.0.2
+90 silly currentTree │ │ ├── pseudomap@1.0.2
+90 silly currentTree │ │ └── yallist@2.0.0
+90 silly currentTree │ ├─┬ shebang-command@1.2.0
+90 silly currentTree │ │ └── shebang-regex@1.0.0
+90 silly currentTree │ └─┬ which@1.2.12
+90 silly currentTree │   └── isexe@1.1.2
+90 silly currentTree ├── dargs
+90 silly currentTree ├── dateformat
+90 silly currentTree ├── defaults
+90 silly currentTree ├── deprecated
+90 silly currentTree ├── detect-file
+90 silly currentTree ├── duplexer2
+90 silly currentTree ├── each-async
+90 silly currentTree ├── end-of-stream
+90 silly currentTree ├── escape-string-regexp
+90 silly currentTree ├── expand-brackets
+90 silly currentTree ├── expand-range
+90 silly currentTree ├── expand-tilde
+90 silly currentTree ├── extend
+90 silly currentTree ├── extglob
+90 silly currentTree ├── fancy-log
+90 silly currentTree ├── filename-regex
+90 silly currentTree ├── fill-range
+90 silly currentTree ├── find-index
+90 silly currentTree ├── findup-sync
+90 silly currentTree ├── fined
+90 silly currentTree ├── first-chunk-stream
+90 silly currentTree ├── flagged-respawn
+90 silly currentTree ├── font-awesome@4.7.0
+90 silly currentTree ├── for-in
+90 silly currentTree ├── for-own
+90 silly currentTree ├── fs-exists-sync
+90 silly currentTree ├── fs.realpath
+90 silly currentTree ├── gaze
+90 silly currentTree ├── glob
+90 silly currentTree ├── glob-base
+90 silly currentTree ├── glob-parent
+90 silly currentTree ├─┬ glob-stream@3.1.18
+90 silly currentTree │ ├─┬ glob@4.5.3
+90 silly currentTree │ │ ├── inflight@1.0.6
+90 silly currentTree │ │ ├── inherits@2.0.3
+90 silly currentTree │ │ ├── once@1.4.0
+90 silly currentTree │ │ └── wrappy@1.0.2
+90 silly currentTree │ ├─┬ glob2base@0.0.12
+90 silly currentTree │ │ └── find-index@0.1.1
+90 silly currentTree │ ├── minimatch@2.0.10
+90 silly currentTree │ ├── ordered-read-streams@0.1.0
+90 silly currentTree │ ├─┬ readable-stream@1.0.34
+90 silly currentTree │ │ ├── inherits@2.0.3
+90 silly currentTree │ │ ├── isarray@0.0.1
+90 silly currentTree │ │ └── string_decoder@0.10.31
+90 silly currentTree │ ├─┬ through2@0.6.5
+90 silly currentTree │ │ └── xtend@4.0.1
+90 silly currentTree │ └── unique-stream@1.0.0
+90 silly currentTree ├── glob-watcher
+90 silly currentTree ├── glob2base
+90 silly currentTree ├── global-modules
+90 silly currentTree ├── global-prefix
+90 silly currentTree ├─┬ globule@0.1.0
+90 silly currentTree │ ├── glob@3.1.21
+90 silly currentTree │ ├── graceful-fs@1.2.3
+90 silly currentTree │ ├── inherits@1.0.2
+90 silly currentTree │ ├── lodash@1.0.2
+90 silly currentTree │ └─┬ minimatch@0.2.14
+90 silly currentTree │   ├── lru-cache@2.7.3
+90 silly currentTree │   └── sigmund@1.0.1
+90 silly currentTree ├── glogg
+90 silly currentTree ├── graceful-fs
+90 silly currentTree ├─┬ gulp-plumber@1.1.0
+90 silly currentTree │ ├── chalk@1.1.3
+90 silly currentTree │ ├── dateformat@2.0.0
+90 silly currentTree │ ├── duplexer2@0.0.2
+90 silly currentTree │ ├── escape-string-regexp@1.0.5
+90 silly currentTree │ ├── fancy-log@1.3.0
+90 silly currentTree │ ├── glogg@1.0.0
+90 silly currentTree │ ├── gulp-util@3.0.8
+90 silly currentTree │ ├── gulplog@1.0.0
+90 silly currentTree │ ├── has-ansi@2.0.0
+90 silly currentTree │ ├── has-gulplog@0.1.0
+90 silly currentTree │ ├── inherits@2.0.3
+90 silly currentTree │ ├── isarray@0.0.1
+90 silly currentTree │ ├── lodash._basecopy@3.0.1
+90 silly currentTree │ ├── lodash._basetostring@3.0.1
+90 silly currentTree │ ├── lodash._basevalues@3.0.0
+90 silly currentTree │ ├── lodash._getnative@3.9.1
+90 silly currentTree │ ├── lodash._isiterateecall@3.0.9
+90 silly currentTree │ ├── lodash._reescape@3.0.0
+90 silly currentTree │ ├── lodash._reevaluate@3.0.0
+90 silly currentTree │ ├── lodash._reinterpolate@3.0.0
+90 silly currentTree │ ├── lodash._root@3.0.1
+90 silly currentTree │ ├── lodash.escape@3.2.0
+90 silly currentTree │ ├── lodash.isarguments@3.1.0
+90 silly currentTree │ ├── lodash.isarray@3.0.4
+90 silly currentTree │ ├── lodash.keys@3.1.2
+90 silly currentTree │ ├── lodash.restparam@3.6.1
+90 silly currentTree │ ├── lodash.template@3.6.2
+90 silly currentTree │ ├── lodash.templatesettings@3.1.1
+90 silly currentTree │ ├── minimist@1.2.0
+90 silly currentTree │ ├── multipipe@0.1.2
+90 silly currentTree │ ├── object-assign@3.0.0
+90 silly currentTree │ ├── process-nextick-args@1.0.7
+90 silly currentTree │ ├── readable-stream@1.1.14
+90 silly currentTree │ ├── replace-ext@0.0.1
+90 silly currentTree │ ├── sparkles@1.0.0
+90 silly currentTree │ ├── string_decoder@0.10.31
+90 silly currentTree │ ├── strip-ansi@3.0.1
+90 silly currentTree │ ├── supports-color@2.0.0
+90 silly currentTree │ ├─┬ through2@2.0.3
+90 silly currentTree │ │ ├── isarray@1.0.0
+90 silly currentTree │ │ └── readable-stream@2.2.3
+90 silly currentTree │ ├── time-stamp@1.0.1
+90 silly currentTree │ ├── util-deprecate@1.0.2
+90 silly currentTree │ ├── vinyl@0.5.3
+90 silly currentTree │ └── xtend@4.0.1
+90 silly currentTree ├─┬ gulp-ruby-sass@2.1.1
+90 silly currentTree │ ├── chalk@1.1.3
+90 silly currentTree │ ├── cross-spawn@5.0.1
+90 silly currentTree │ ├── dargs@2.1.0
+90 silly currentTree │ ├── dateformat@2.0.0
+90 silly currentTree │ ├── duplexer2@0.0.2
+90 silly currentTree │ ├── each-async@1.1.1
+90 silly currentTree │ ├── escape-string-regexp@1.0.5
+90 silly currentTree │ ├── fancy-log@1.3.0
+90 silly currentTree │ ├── find-index@0.1.1
+90 silly currentTree │ ├─┬ glob@7.1.1
+90 silly currentTree │ │ ├── fs.realpath@1.0.0
+90 silly currentTree │ │ ├─┬ inflight@1.0.6
+90 silly currentTree │ │ │ └── wrappy@1.0.2
+90 silly currentTree │ │ ├── inherits@2.0.3
+90 silly currentTree │ │ ├─┬ once@1.4.0
+90 silly currentTree │ │ │ └── wrappy@1.0.2
+90 silly currentTree │ │ └── path-is-absolute@1.0.1
+90 silly currentTree │ ├── glob2base@0.0.12
+90 silly currentTree │ ├── glogg@1.0.0
+90 silly currentTree │ ├─┬ gulp-util@3.0.8
+90 silly currentTree │ │ └── object-assign@3.0.0
+90 silly currentTree │ ├── gulplog@1.0.0
+90 silly currentTree │ ├── has-ansi@2.0.0
+90 silly currentTree │ ├── has-gulplog@0.1.0
+90 silly currentTree │ ├── inherits@2.0.3
+90 silly currentTree │ ├── isarray@0.0.1
+90 silly currentTree │ ├── isexe@1.1.2
+90 silly currentTree │ ├── lodash._basecopy@3.0.1
+90 silly currentTree │ ├── lodash._basetostring@3.0.1
+90 silly currentTree │ ├── lodash._basevalues@3.0.0
+90 silly currentTree │ ├── lodash._getnative@3.9.1
+90 silly currentTree │ ├── lodash._isiterateecall@3.0.9
+90 silly currentTree │ ├── lodash._reescape@3.0.0
+90 silly currentTree │ ├── lodash._reevaluate@3.0.0
+90 silly currentTree │ ├── lodash._reinterpolate@3.0.0
+90 silly currentTree │ ├── lodash._root@3.0.1
+90 silly currentTree │ ├── lodash.escape@3.2.0
+90 silly currentTree │ ├── lodash.isarguments@3.1.0
+90 silly currentTree │ ├── lodash.isarray@3.0.4
+90 silly currentTree │ ├── lodash.keys@3.1.2
+90 silly currentTree │ ├── lodash.restparam@3.6.1
+90 silly currentTree │ ├── lodash.template@3.6.2
+90 silly currentTree │ ├── lodash.templatesettings@3.1.1
+90 silly currentTree │ ├── lru-cache@4.0.2
+90 silly currentTree │ ├── md5-hex@1.3.0
+90 silly currentTree │ ├── md5-o-matic@0.1.1
+90 silly currentTree │ ├─┬ minimatch@3.0.3
+90 silly currentTree │ │ └─┬ brace-expansion@1.1.6
+90 silly currentTree │ │   ├── balanced-match@0.4.2
+90 silly currentTree │ │   └── concat-map@0.0.1
+90 silly currentTree │ ├── minimist@1.2.0
+90 silly currentTree │ ├── multipipe@0.1.2
+90 silly currentTree │ ├── object-assign@4.1.1
+90 silly currentTree │ ├── onetime@1.1.0
+90 silly currentTree │ ├── os-tmpdir@1.0.2
+90 silly currentTree │ ├── path-exists@2.1.0
+90 silly currentTree │ ├── pinkie-promise@2.0.1
+90 silly currentTree │ ├── pinkie@2.0.4
+90 silly currentTree │ ├── pseudomap@1.0.2
+90 silly currentTree │ ├── readable-stream@1.1.14
+90 silly currentTree │ ├── replace-ext@0.0.1
+90 silly currentTree │ ├── set-immediate-shim@1.0.1
+90 silly currentTree │ ├── shebang-command@1.2.0
+90 silly currentTree │ ├── shebang-regex@1.0.0
+90 silly currentTree │ ├── sparkles@1.0.0
+90 silly currentTree │ ├── string_decoder@0.10.31
+90 silly currentTree │ ├── strip-ansi@3.0.1
+90 silly currentTree │ ├── supports-color@2.0.0
+90 silly currentTree │ ├── time-stamp@1.0.1
+90 silly currentTree │ ├── vinyl@0.5.3
+90 silly currentTree │ ├── which@1.2.12
+90 silly currentTree │ └── yallist@2.0.0
+90 silly currentTree ├─┬ gulp@3.9.1
+90 silly currentTree │ ├── braces@1.8.5
+90 silly currentTree │ ├── chalk@1.1.3
+90 silly currentTree │ ├── dateformat@2.0.0
+90 silly currentTree │ ├── defaults@1.0.3
+90 silly currentTree │ ├── deprecated@0.0.1
+90 silly currentTree │ ├── detect-file@0.1.0
+90 silly currentTree │ ├── duplexer2@0.0.2
+90 silly currentTree │ ├── end-of-stream@0.1.5
+90 silly currentTree │ ├── escape-string-regexp@1.0.5
+90 silly currentTree │ ├── expand-brackets@0.1.5
+90 silly currentTree │ ├── expand-range@1.8.2
+90 silly currentTree │ ├── expand-tilde@1.2.2
+90 silly currentTree │ ├── extend@3.0.0
+90 silly currentTree │ ├── extglob@0.3.2
+90 silly currentTree │ ├── fancy-log@1.3.0
+90 silly currentTree │ ├── filename-regex@2.0.0
+90 silly currentTree │ ├── fill-range@2.2.3
+90 silly currentTree │ ├── findup-sync@0.4.3
+90 silly currentTree │ ├── fined@1.0.2
+90 silly currentTree │ ├── flagged-respawn@0.3.2
+90 silly currentTree │ ├── for-in@0.1.6
+90 silly currentTree │ ├── for-own@0.1.4
+90 silly currentTree │ ├── fs-exists-sync@0.1.0
+90 silly currentTree │ ├── gaze@0.5.2
+90 silly currentTree │ ├── glob-base@0.3.0
+90 silly currentTree │ ├── glob-parent@2.0.0
+90 silly currentTree │ ├── glob-watcher@0.0.6
+90 silly currentTree │ ├── global-modules@0.2.3
+90 silly currentTree │ ├── global-prefix@0.1.5
+90 silly currentTree │ ├── glogg@1.0.0
+90 silly currentTree │ ├── graceful-fs@3.0.11
+90 silly currentTree │ ├── gulp-util@3.0.8
+90 silly currentTree │ ├── gulplog@1.0.0
+90 silly currentTree │ ├── has-ansi@2.0.0
+90 silly currentTree │ ├── has-gulplog@0.1.0
+90 silly currentTree │ ├── homedir-polyfill@1.0.1
+90 silly currentTree │ ├── inherits@2.0.3
+90 silly currentTree │ ├── ini@1.3.4
+90 silly currentTree │ ├── interpret@1.0.1
+90 silly currentTree │ ├── is-absolute@0.2.6
+90 silly currentTree │ ├── is-buffer@1.1.4
+90 silly currentTree │ ├── is-dotfile@1.0.2
+90 silly currentTree │ ├── is-equal-shallow@0.1.3
+90 silly currentTree │ ├── is-extendable@0.1.1
+90 silly currentTree │ ├── is-extglob@1.0.0
+90 silly currentTree │ ├── is-glob@2.0.1
+90 silly currentTree │ ├── is-number@2.1.0
+90 silly currentTree │ ├── is-posix-bracket@0.1.1
+90 silly currentTree │ ├── is-primitive@2.0.0
+90 silly currentTree │ ├── is-relative@0.2.1
+90 silly currentTree │ ├── is-unc-path@0.1.2
+90 silly currentTree │ ├── is-windows@0.2.0
+90 silly currentTree │ ├── isarray@0.0.1
+90 silly currentTree │ ├── isexe@1.1.2
+90 silly currentTree │ ├── kind-of@3.1.0
+90 silly currentTree │ ├── liftoff@2.3.0
+90 silly currentTree │ ├── lodash._basecopy@3.0.1
+90 silly currentTree │ ├── lodash._basetostring@3.0.1
+90 silly currentTree │ ├── lodash._basevalues@3.0.0
+90 silly currentTree │ ├── lodash._getnative@3.9.1
+90 silly currentTree │ ├── lodash._isiterateecall@3.0.9
+90 silly currentTree │ ├── lodash._reescape@3.0.0
+90 silly currentTree │ ├── lodash._reevaluate@3.0.0
+90 silly currentTree │ ├── lodash._reinterpolate@3.0.0
+90 silly currentTree │ ├── lodash._root@3.0.1
+90 silly currentTree │ ├── lodash.assignwith@4.2.0
+90 silly currentTree │ ├── lodash.escape@3.2.0
+90 silly currentTree │ ├── lodash.isarguments@3.1.0
+90 silly currentTree │ ├── lodash.isarray@3.0.4
+90 silly currentTree │ ├── lodash.isempty@4.4.0
+90 silly currentTree │ ├── lodash.isplainobject@4.0.6
+90 silly currentTree │ ├── lodash.isstring@4.0.1
+90 silly currentTree │ ├── lodash.keys@3.1.2
+90 silly currentTree │ ├── lodash.mapvalues@4.6.0
+90 silly currentTree │ ├── lodash.pick@4.4.0
+90 silly currentTree │ ├── lodash.restparam@3.6.1
+90 silly currentTree │ ├── lodash.template@3.6.2
+90 silly currentTree │ ├── lodash.templatesettings@3.1.1
+90 silly currentTree │ ├── map-cache@0.2.2
+90 silly currentTree │ ├── micromatch@2.3.11
+90 silly currentTree │ ├── minimist@1.2.0
+90 silly currentTree │ ├─┬ mkdirp@0.5.1
+90 silly currentTree │ │ └── minimist@0.0.8
+90 silly currentTree │ ├── multipipe@0.1.2
+90 silly currentTree │ ├── natives@1.1.0
+90 silly currentTree │ ├── normalize-path@2.0.1
+90 silly currentTree │ ├── object-assign@3.0.0
+90 silly currentTree │ ├── object.omit@2.0.1
+90 silly currentTree │ ├── once@1.3.3
+90 silly currentTree │ ├── orchestrator@0.3.8
+90 silly currentTree │ ├── os-homedir@1.0.2
+90 silly currentTree │ ├── parse-filepath@1.0.1
+90 silly currentTree │ ├── parse-glob@3.0.4
+90 silly currentTree │ ├── parse-passwd@1.0.0
+90 silly currentTree │ ├── path-root-regex@0.1.2
+90 silly currentTree │ ├── path-root@0.1.1
+90 silly currentTree │ ├── preserve@0.2.0
+90 silly currentTree │ ├── pretty-hrtime@1.0.3
+90 silly currentTree │ ├── randomatic@1.1.6
+90 silly currentTree │ ├── readable-stream@1.1.14
+90 silly currentTree │ ├── rechoir@0.6.2
+90 silly currentTree │ ├── regex-cache@0.4.3
+90 silly currentTree │ ├── repeat-element@1.1.2
+90 silly currentTree │ ├── repeat-string@1.6.1
+90 silly currentTree │ ├── replace-ext@0.0.1
+90 silly currentTree │ ├── resolve-dir@0.1.1
+90 silly currentTree │ ├── resolve@1.2.0
+90 silly currentTree │ ├── semver@4.3.6
+90 silly currentTree │ ├── sequencify@0.0.7
+90 silly currentTree │ ├── sparkles@1.0.0
+90 silly currentTree │ ├── stream-consume@0.1.0
+90 silly currentTree │ ├── string_decoder@0.10.31
+90 silly currentTree │ ├── strip-ansi@3.0.1
+90 silly currentTree │ ├── supports-color@2.0.0
+90 silly currentTree │ ├── tildify@1.2.0
+90 silly currentTree │ ├── time-stamp@1.0.1
+90 silly currentTree │ ├── unc-path-regex@0.1.2
+90 silly currentTree │ ├── user-home@1.1.1
+90 silly currentTree │ ├── v8flags@2.0.11
+90 silly currentTree │ ├─┬ vinyl-fs@0.3.14
+90 silly currentTree │ │ ├── clone@0.2.0
+90 silly currentTree │ │ ├── readable-stream@1.0.34
+90 silly currentTree │ │ ├── through2@0.6.5
+90 silly currentTree │ │ └── vinyl@0.4.6
+90 silly currentTree │ ├── vinyl@0.5.3
+90 silly currentTree │ ├── which@1.2.12
+90 silly currentTree │ ├── wrappy@1.0.2
+90 silly currentTree │ └── xtend@4.0.1
+90 silly currentTree ├── gulplog
+90 silly currentTree ├── has-ansi
+90 silly currentTree ├── has-gulplog
+90 silly currentTree ├── homedir-polyfill
+90 silly currentTree ├── inflight
+90 silly currentTree ├── inherits
+90 silly currentTree ├── ini
+90 silly currentTree ├── interpret
+90 silly currentTree ├── is-absolute
+90 silly currentTree ├── is-buffer
+90 silly currentTree ├── is-dotfile
+90 silly currentTree ├── is-equal-shallow
+90 silly currentTree ├── is-extendable
+90 silly currentTree ├── is-extglob
+90 silly currentTree ├── is-glob
+90 silly currentTree ├── is-number
+90 silly currentTree ├── is-posix-bracket
+90 silly currentTree ├── is-primitive
+90 silly currentTree ├── is-relative
+90 silly currentTree ├── is-unc-path
+90 silly currentTree ├── is-utf8
+90 silly currentTree ├── is-windows
+90 silly currentTree ├── isarray
+90 silly currentTree ├── isexe
+90 silly currentTree ├─┬ isobject@2.1.0
+90 silly currentTree │ └── isarray@1.0.0
+90 silly currentTree ├── kind-of
+90 silly currentTree ├── liftoff
+90 silly currentTree ├── lodash
+90 silly currentTree ├── lodash._basecopy
+90 silly currentTree ├── lodash._basetostring
+90 silly currentTree ├── lodash._basevalues
+90 silly currentTree ├── lodash._getnative
+90 silly currentTree ├── lodash._isiterateecall
+90 silly currentTree ├── lodash._reescape
+90 silly currentTree ├── lodash._reevaluate
+90 silly currentTree ├── lodash._reinterpolate
+90 silly currentTree ├── lodash._root
+90 silly currentTree ├── lodash.assignwith
+90 silly currentTree ├── lodash.escape
+90 silly currentTree ├── lodash.isarguments
+90 silly currentTree ├── lodash.isarray
+90 silly currentTree ├── lodash.isempty
+90 silly currentTree ├── lodash.isplainobject
+90 silly currentTree ├── lodash.isstring
+90 silly currentTree ├── lodash.keys
+90 silly currentTree ├── lodash.mapvalues
+90 silly currentTree ├── lodash.pick
+90 silly currentTree ├── lodash.restparam
+90 silly currentTree ├── lodash.template
+90 silly currentTree ├── lodash.templatesettings
+90 silly currentTree ├── lru-cache
+90 silly currentTree ├── map-cache
+90 silly currentTree ├── md5-hex
+90 silly currentTree ├── md5-o-matic
+90 silly currentTree ├── micromatch
+90 silly currentTree ├── minimatch
+90 silly currentTree ├── minimist
+90 silly currentTree ├── multipipe
+90 silly currentTree ├── natives
+90 silly currentTree ├── normalize-path
+90 silly currentTree ├── normalize.css@5.0.0
+90 silly currentTree ├── object-assign
+90 silly currentTree ├── object.omit
+90 silly currentTree ├── once
+90 silly currentTree ├── onetime
+90 silly currentTree ├── orchestrator
+90 silly currentTree ├── ordered-read-streams
+90 silly currentTree ├── os-homedir
+90 silly currentTree ├── os-tmpdir
+90 silly currentTree ├── parse-filepath
+90 silly currentTree ├── parse-glob
+90 silly currentTree ├── parse-passwd
+90 silly currentTree ├── path-exists
+90 silly currentTree ├── path-is-absolute
+90 silly currentTree ├── path-root
+90 silly currentTree ├── path-root-regex
+90 silly currentTree ├── pinkie
+90 silly currentTree ├── pinkie-promise
+90 silly currentTree ├── preserve
+90 silly currentTree ├── pretty-hrtime
+90 silly currentTree ├── process-nextick-args
+90 silly currentTree ├── pseudomap
+90 silly currentTree ├── randomatic
+90 silly currentTree ├── readable-stream
+90 silly currentTree ├── rechoir
+90 silly currentTree ├── regex-cache
+90 silly currentTree ├── repeat-element
+90 silly currentTree ├── repeat-string
+90 silly currentTree ├── replace-ext
+90 silly currentTree ├── resolve
+90 silly currentTree ├── resolve-dir
+90 silly currentTree ├─┬ rimraf@2.6.0
+90 silly currentTree │ ├── fs.realpath@1.0.0
+90 silly currentTree │ ├── glob@7.1.1
+90 silly currentTree │ ├── inflight@1.0.6
+90 silly currentTree │ ├── inherits@2.0.3
+90 silly currentTree │ ├── minimatch@3.0.3
+90 silly currentTree │ ├── once@1.4.0
+90 silly currentTree │ ├── path-is-absolute@1.0.1
+90 silly currentTree │ └── wrappy@1.0.2
+90 silly currentTree ├── semver
+90 silly currentTree ├── sequencify
+90 silly currentTree ├── set-immediate-shim
+90 silly currentTree ├── shebang-command
+90 silly currentTree ├── shebang-regex
+90 silly currentTree ├── sigmund
+90 silly currentTree ├── sparkles
+90 silly currentTree ├── stream-consume
+90 silly currentTree ├── string_decoder
+90 silly currentTree ├── strip-ansi
+90 silly currentTree ├─┬ strip-bom@1.0.0
+90 silly currentTree │ ├── first-chunk-stream@1.0.0
+90 silly currentTree │ └── is-utf8@0.2.1
+90 silly currentTree ├── supports-color
+90 silly currentTree ├─┬ through2@2.0.3
+90 silly currentTree │ ├── inherits@2.0.3
+90 silly currentTree │ ├── isarray@1.0.0
+90 silly currentTree │ ├── process-nextick-args@1.0.7
+90 silly currentTree │ ├── readable-stream@2.2.3
+90 silly currentTree │ ├── string_decoder@0.10.31
+90 silly currentTree │ ├── util-deprecate@1.0.2
+90 silly currentTree │ └── xtend@4.0.1
+90 silly currentTree ├── tildify
+90 silly currentTree ├── time-stamp
+90 silly currentTree ├── unc-path-regex
+90 silly currentTree ├── unique-stream
+90 silly currentTree ├── util-deprecate
+90 silly currentTree ├── v8flags
+90 silly currentTree ├── vinyl
+90 silly currentTree ├─┬ vinyl-fs@0.3.14
+90 silly currentTree │ ├── clone@0.2.0
+90 silly currentTree │ ├─┬ defaults@1.0.3
+90 silly currentTree │ │ └── clone@1.0.2
+90 silly currentTree │ ├── first-chunk-stream@1.0.0
+90 silly currentTree │ ├── gaze@0.5.2
+90 silly currentTree │ ├── glob-watcher@0.0.6
+90 silly currentTree │ ├── graceful-fs@3.0.11
+90 silly currentTree │ ├── inherits@2.0.3
+90 silly currentTree │ ├── is-utf8@0.2.1
+90 silly currentTree │ ├── isarray@0.0.1
+90 silly currentTree │ ├── minimist@0.0.8
+90 silly currentTree │ ├── mkdirp@0.5.1
+90 silly currentTree │ ├── natives@1.1.0
+90 silly currentTree │ ├── readable-stream@1.0.34
+90 silly currentTree │ ├── string_decoder@0.10.31
+90 silly currentTree │ ├── strip-bom@1.0.0
+90 silly currentTree │ ├── through2@0.6.5
+90 silly currentTree │ ├── vinyl@0.4.6
+90 silly currentTree │ └── xtend@4.0.1
+90 silly currentTree ├── waypoints@4.0.1
+90 silly currentTree ├── which
+90 silly currentTree ├── wrappy
+90 silly currentTree ├── xtend
+90 silly currentTree └── yallist
+91 silly idealTree portfolio_v2@1.0.0
+91 silly idealTree ├── ansi-regex@2.1.1
+91 silly idealTree ├── ansi-styles@2.2.1
+91 silly idealTree ├── archy@1.0.0
+91 silly idealTree ├── arr-diff@2.0.0
+91 silly idealTree ├── arr-flatten@1.0.1
+91 silly idealTree ├── array-differ@1.0.0
+91 silly idealTree ├── array-uniq@1.0.3
+91 silly idealTree ├── array-unique@0.2.1
+91 silly idealTree ├── balanced-match@0.4.2
+91 silly idealTree ├── beeper@1.1.1
+91 silly idealTree ├── brace-expansion@1.1.6
+91 silly idealTree ├── buffer-shims@1.0.0
+91 silly idealTree ├── clone-stats@0.0.1
+91 silly idealTree ├── clone@1.0.2
+91 silly idealTree ├── concat-map@0.0.1
+91 silly idealTree ├── convert-source-map@1.4.0
+91 silly idealTree ├── core-util-is@1.0.2
+91 silly idealTree ├─┬ cross-spawn@5.0.1
+91 silly idealTree │ ├─┬ lru-cache@4.0.2
+91 silly idealTree │ │ ├── pseudomap@1.0.2
+91 silly idealTree │ │ └── yallist@2.0.0
+91 silly idealTree │ ├─┬ shebang-command@1.2.0
+91 silly idealTree │ │ └── shebang-regex@1.0.0
+91 silly idealTree │ └─┬ which@1.2.12
+91 silly idealTree │   └── isexe@1.1.2
+91 silly idealTree ├── dargs
+91 silly idealTree ├── dateformat
+91 silly idealTree ├── defaults
+91 silly idealTree ├── deprecated
+91 silly idealTree ├── detect-file
+91 silly idealTree ├── duplexer2
+91 silly idealTree ├── each-async
+91 silly idealTree ├── end-of-stream
+91 silly idealTree ├── escape-string-regexp
+91 silly idealTree ├── expand-brackets
+91 silly idealTree ├── expand-range
+91 silly idealTree ├── expand-tilde
+91 silly idealTree ├── extend
+91 silly idealTree ├── extglob
+91 silly idealTree ├── fancy-log
+91 silly idealTree ├── filename-regex
+91 silly idealTree ├── fill-range
+91 silly idealTree ├── find-index
+91 silly idealTree ├── findup-sync
+91 silly idealTree ├── fined
+91 silly idealTree ├── first-chunk-stream
+91 silly idealTree ├── flagged-respawn
+91 silly idealTree ├── font-awesome@4.7.0
+91 silly idealTree ├── for-in
+91 silly idealTree ├── for-own
+91 silly idealTree ├── fs-exists-sync
+91 silly idealTree ├── fs.realpath
+91 silly idealTree ├── gaze
+91 silly idealTree ├── glob
+91 silly idealTree ├── glob-base
+91 silly idealTree ├── glob-parent
+91 silly idealTree ├─┬ glob-stream@3.1.18
+91 silly idealTree │ ├─┬ glob@4.5.3
+91 silly idealTree │ │ ├── inflight@1.0.6
+91 silly idealTree │ │ ├── inherits@2.0.3
+91 silly idealTree │ │ ├── once@1.4.0
+91 silly idealTree │ │ └── wrappy@1.0.2
+91 silly idealTree │ ├─┬ glob2base@0.0.12
+91 silly idealTree │ │ └── find-index@0.1.1
+91 silly idealTree │ ├── minimatch@2.0.10
+91 silly idealTree │ ├── ordered-read-streams@0.1.0
+91 silly idealTree │ ├─┬ readable-stream@1.0.34
+91 silly idealTree │ │ ├── inherits@2.0.3
+91 silly idealTree │ │ ├── isarray@0.0.1
+91 silly idealTree │ │ └── string_decoder@0.10.31
+91 silly idealTree │ ├─┬ through2@0.6.5
+91 silly idealTree │ │ └── xtend@4.0.1
+91 silly idealTree │ └── unique-stream@1.0.0
+91 silly idealTree ├── glob-watcher
+91 silly idealTree ├── glob2base
+91 silly idealTree ├── global-modules
+91 silly idealTree ├── global-prefix
+91 silly idealTree ├─┬ globule@0.1.0
+91 silly idealTree │ ├── glob@3.1.21
+91 silly idealTree │ ├── graceful-fs@1.2.3
+91 silly idealTree │ ├── inherits@1.0.2
+91 silly idealTree │ ├── lodash@1.0.2
+91 silly idealTree │ └─┬ minimatch@0.2.14
+91 silly idealTree │   ├── lru-cache@2.7.3
+91 silly idealTree │   └── sigmund@1.0.1
+91 silly idealTree ├── glogg
+91 silly idealTree ├── graceful-fs
+91 silly idealTree ├─┬ gulp-plumber@1.1.0
+91 silly idealTree │ ├── chalk@1.1.3
+91 silly idealTree │ ├── dateformat@2.0.0
+91 silly idealTree │ ├── duplexer2@0.0.2
+91 silly idealTree │ ├── escape-string-regexp@1.0.5
+91 silly idealTree │ ├── fancy-log@1.3.0
+91 silly idealTree │ ├── glogg@1.0.0
+91 silly idealTree │ ├── gulp-util@3.0.8
+91 silly idealTree │ ├── gulplog@1.0.0
+91 silly idealTree │ ├── has-ansi@2.0.0
+91 silly idealTree │ ├── has-gulplog@0.1.0
+91 silly idealTree │ ├── inherits@2.0.3
+91 silly idealTree │ ├── isarray@0.0.1
+91 silly idealTree │ ├── lodash._basecopy@3.0.1
+91 silly idealTree │ ├── lodash._basetostring@3.0.1
+91 silly idealTree │ ├── lodash._basevalues@3.0.0
+91 silly idealTree │ ├── lodash._getnative@3.9.1
+91 silly idealTree │ ├── lodash._isiterateecall@3.0.9
+91 silly idealTree │ ├── lodash._reescape@3.0.0
+91 silly idealTree │ ├── lodash._reevaluate@3.0.0
+91 silly idealTree │ ├── lodash._reinterpolate@3.0.0
+91 silly idealTree │ ├── lodash._root@3.0.1
+91 silly idealTree │ ├── lodash.escape@3.2.0
+91 silly idealTree │ ├── lodash.isarguments@3.1.0
+91 silly idealTree │ ├── lodash.isarray@3.0.4
+91 silly idealTree │ ├── lodash.keys@3.1.2
+91 silly idealTree │ ├── lodash.restparam@3.6.1
+91 silly idealTree │ ├── lodash.template@3.6.2
+91 silly idealTree │ ├── lodash.templatesettings@3.1.1
+91 silly idealTree │ ├── minimist@1.2.0
+91 silly idealTree │ ├── multipipe@0.1.2
+91 silly idealTree │ ├── object-assign@3.0.0
+91 silly idealTree │ ├── process-nextick-args@1.0.7
+91 silly idealTree │ ├── readable-stream@1.1.14
+91 silly idealTree │ ├── replace-ext@0.0.1
+91 silly idealTree │ ├── sparkles@1.0.0
+91 silly idealTree │ ├── string_decoder@0.10.31
+91 silly idealTree │ ├── strip-ansi@3.0.1
+91 silly idealTree │ ├── supports-color@2.0.0
+91 silly idealTree │ ├─┬ through2@2.0.3
+91 silly idealTree │ │ ├── isarray@1.0.0
+91 silly idealTree │ │ └── readable-stream@2.2.3
+91 silly idealTree │ ├── time-stamp@1.0.1
+91 silly idealTree │ ├── util-deprecate@1.0.2
+91 silly idealTree │ ├── vinyl@0.5.3
+91 silly idealTree │ └── xtend@4.0.1
+91 silly idealTree ├─┬ gulp-ruby-sass@2.1.1
+91 silly idealTree │ ├── chalk@1.1.3
+91 silly idealTree │ ├── cross-spawn@5.0.1
+91 silly idealTree │ ├── dargs@2.1.0
+91 silly idealTree │ ├── dateformat@2.0.0
+91 silly idealTree │ ├── duplexer2@0.0.2
+91 silly idealTree │ ├── each-async@1.1.1
+91 silly idealTree │ ├── escape-string-regexp@1.0.5
+91 silly idealTree │ ├── fancy-log@1.3.0
+91 silly idealTree │ ├── find-index@0.1.1
+91 silly idealTree │ ├─┬ glob@7.1.1
+91 silly idealTree │ │ ├── fs.realpath@1.0.0
+91 silly idealTree │ │ ├─┬ inflight@1.0.6
+91 silly idealTree │ │ │ └── wrappy@1.0.2
+91 silly idealTree │ │ ├── inherits@2.0.3
+91 silly idealTree │ │ ├─┬ once@1.4.0
+91 silly idealTree │ │ │ └── wrappy@1.0.2
+91 silly idealTree │ │ └── path-is-absolute@1.0.1
+91 silly idealTree │ ├── glob2base@0.0.12
+91 silly idealTree │ ├── glogg@1.0.0
+91 silly idealTree │ ├─┬ gulp-util@3.0.8
+91 silly idealTree │ │ └── object-assign@3.0.0
+91 silly idealTree │ ├── gulplog@1.0.0
+91 silly idealTree │ ├── has-ansi@2.0.0
+91 silly idealTree │ ├── has-gulplog@0.1.0
+91 silly idealTree │ ├── inherits@2.0.3
+91 silly idealTree │ ├── isarray@0.0.1
+91 silly idealTree │ ├── isexe@1.1.2
+91 silly idealTree │ ├── lodash._basecopy@3.0.1
+91 silly idealTree │ ├── lodash._basetostring@3.0.1
+91 silly idealTree │ ├── lodash._basevalues@3.0.0
+91 silly idealTree │ ├── lodash._getnative@3.9.1
+91 silly idealTree │ ├── lodash._isiterateecall@3.0.9
+91 silly idealTree │ ├── lodash._reescape@3.0.0
+91 silly idealTree │ ├── lodash._reevaluate@3.0.0
+91 silly idealTree │ ├── lodash._reinterpolate@3.0.0
+91 silly idealTree │ ├── lodash._root@3.0.1
+91 silly idealTree │ ├── lodash.escape@3.2.0
+91 silly idealTree │ ├── lodash.isarguments@3.1.0
+91 silly idealTree │ ├── lodash.isarray@3.0.4
+91 silly idealTree │ ├── lodash.keys@3.1.2
+91 silly idealTree │ ├── lodash.restparam@3.6.1
+91 silly idealTree │ ├── lodash.template@3.6.2
+91 silly idealTree │ ├── lodash.templatesettings@3.1.1
+91 silly idealTree │ ├── lru-cache@4.0.2
+91 silly idealTree │ ├── md5-hex@1.3.0
+91 silly idealTree │ ├── md5-o-matic@0.1.1
+91 silly idealTree │ ├─┬ minimatch@3.0.3
+91 silly idealTree │ │ └─┬ brace-expansion@1.1.6
+91 silly idealTree │ │   ├── balanced-match@0.4.2
+91 silly idealTree │ │   └── concat-map@0.0.1
+91 silly idealTree │ ├── minimist@1.2.0
+91 silly idealTree │ ├── multipipe@0.1.2
+91 silly idealTree │ ├── object-assign@4.1.1
+91 silly idealTree │ ├── onetime@1.1.0
+91 silly idealTree │ ├── os-tmpdir@1.0.2
+91 silly idealTree │ ├── path-exists@2.1.0
+91 silly idealTree │ ├── pinkie-promise@2.0.1
+91 silly idealTree │ ├── pinkie@2.0.4
+91 silly idealTree │ ├── pseudomap@1.0.2
+91 silly idealTree │ ├── readable-stream@1.1.14
+91 silly idealTree │ ├── replace-ext@0.0.1
+91 silly idealTree │ ├── set-immediate-shim@1.0.1
+91 silly idealTree │ ├── shebang-command@1.2.0
+91 silly idealTree │ ├── shebang-regex@1.0.0
+91 silly idealTree │ ├── sparkles@1.0.0
+91 silly idealTree │ ├── string_decoder@0.10.31
+91 silly idealTree │ ├── strip-ansi@3.0.1
+91 silly idealTree │ ├── supports-color@2.0.0
+91 silly idealTree │ ├── time-stamp@1.0.1
+91 silly idealTree │ ├── vinyl@0.5.3
+91 silly idealTree │ ├── which@1.2.12
+91 silly idealTree │ └── yallist@2.0.0
+91 silly idealTree ├─┬ gulp@3.9.1
+91 silly idealTree │ ├── braces@1.8.5
+91 silly idealTree │ ├── chalk@1.1.3
+91 silly idealTree │ ├── dateformat@2.0.0
+91 silly idealTree │ ├── defaults@1.0.3
+91 silly idealTree │ ├── deprecated@0.0.1
+91 silly idealTree │ ├── detect-file@0.1.0
+91 silly idealTree │ ├── duplexer2@0.0.2
+91 silly idealTree │ ├── end-of-stream@0.1.5
+91 silly idealTree │ ├── escape-string-regexp@1.0.5
+91 silly idealTree │ ├── expand-brackets@0.1.5
+91 silly idealTree │ ├── expand-range@1.8.2
+91 silly idealTree │ ├── expand-tilde@1.2.2
+91 silly idealTree │ ├── extend@3.0.0
+91 silly idealTree │ ├── extglob@0.3.2
+91 silly idealTree │ ├── fancy-log@1.3.0
+91 silly idealTree │ ├── filename-regex@2.0.0
+91 silly idealTree │ ├── fill-range@2.2.3
+91 silly idealTree │ ├── findup-sync@0.4.3
+91 silly idealTree │ ├── fined@1.0.2
+91 silly idealTree │ ├── flagged-respawn@0.3.2
+91 silly idealTree │ ├── for-in@0.1.6
+91 silly idealTree │ ├── for-own@0.1.4
+91 silly idealTree │ ├── fs-exists-sync@0.1.0
+91 silly idealTree │ ├── gaze@0.5.2
+91 silly idealTree │ ├── glob-base@0.3.0
+91 silly idealTree │ ├── glob-parent@2.0.0
+91 silly idealTree │ ├── glob-watcher@0.0.6
+91 silly idealTree │ ├── global-modules@0.2.3
+91 silly idealTree │ ├── global-prefix@0.1.5
+91 silly idealTree │ ├── glogg@1.0.0
+91 silly idealTree │ ├── graceful-fs@3.0.11
+91 silly idealTree │ ├── gulp-util@3.0.8
+91 silly idealTree │ ├── gulplog@1.0.0
+91 silly idealTree │ ├── has-ansi@2.0.0
+91 silly idealTree │ ├── has-gulplog@0.1.0
+91 silly idealTree │ ├── homedir-polyfill@1.0.1
+91 silly idealTree │ ├── inherits@2.0.3
+91 silly idealTree │ ├── ini@1.3.4
+91 silly idealTree │ ├── interpret@1.0.1
+91 silly idealTree │ ├── is-absolute@0.2.6
+91 silly idealTree │ ├── is-buffer@1.1.4
+91 silly idealTree │ ├── is-dotfile@1.0.2
+91 silly idealTree │ ├── is-equal-shallow@0.1.3
+91 silly idealTree │ ├── is-extendable@0.1.1
+91 silly idealTree │ ├── is-extglob@1.0.0
+91 silly idealTree │ ├── is-glob@2.0.1
+91 silly idealTree │ ├── is-number@2.1.0
+91 silly idealTree │ ├── is-posix-bracket@0.1.1
+91 silly idealTree │ ├── is-primitive@2.0.0
+91 silly idealTree │ ├── is-relative@0.2.1
+91 silly idealTree │ ├── is-unc-path@0.1.2
+91 silly idealTree │ ├── is-windows@0.2.0
+91 silly idealTree │ ├── isarray@0.0.1
+91 silly idealTree │ ├── isexe@1.1.2
+91 silly idealTree │ ├── kind-of@3.1.0
+91 silly idealTree │ ├── liftoff@2.3.0
+91 silly idealTree │ ├── lodash._basecopy@3.0.1
+91 silly idealTree │ ├── lodash._basetostring@3.0.1
+91 silly idealTree │ ├── lodash._basevalues@3.0.0
+91 silly idealTree │ ├── lodash._getnative@3.9.1
+91 silly idealTree │ ├── lodash._isiterateecall@3.0.9
+91 silly idealTree │ ├── lodash._reescape@3.0.0
+91 silly idealTree │ ├── lodash._reevaluate@3.0.0
+91 silly idealTree │ ├── lodash._reinterpolate@3.0.0
+91 silly idealTree │ ├── lodash._root@3.0.1
+91 silly idealTree │ ├── lodash.assignwith@4.2.0
+91 silly idealTree │ ├── lodash.escape@3.2.0
+91 silly idealTree │ ├── lodash.isarguments@3.1.0
+91 silly idealTree │ ├── lodash.isarray@3.0.4
+91 silly idealTree │ ├── lodash.isempty@4.4.0
+91 silly idealTree │ ├── lodash.isplainobject@4.0.6
+91 silly idealTree │ ├── lodash.isstring@4.0.1
+91 silly idealTree │ ├── lodash.keys@3.1.2
+91 silly idealTree │ ├── lodash.mapvalues@4.6.0
+91 silly idealTree │ ├── lodash.pick@4.4.0
+91 silly idealTree │ ├── lodash.restparam@3.6.1
+91 silly idealTree │ ├── lodash.template@3.6.2
+91 silly idealTree │ ├── lodash.templatesettings@3.1.1
+91 silly idealTree │ ├── map-cache@0.2.2
+91 silly idealTree │ ├── micromatch@2.3.11
+91 silly idealTree │ ├── minimist@1.2.0
+91 silly idealTree │ ├─┬ mkdirp@0.5.1
+91 silly idealTree │ │ └── minimist@0.0.8
+91 silly idealTree │ ├── multipipe@0.1.2
+91 silly idealTree │ ├── natives@1.1.0
+91 silly idealTree │ ├── normalize-path@2.0.1
+91 silly idealTree │ ├── object-assign@3.0.0
+91 silly idealTree │ ├── object.omit@2.0.1
+91 silly idealTree │ ├── once@1.3.3
+91 silly idealTree │ ├── orchestrator@0.3.8
+91 silly idealTree │ ├── os-homedir@1.0.2
+91 silly idealTree │ ├── parse-filepath@1.0.1
+91 silly idealTree │ ├── parse-glob@3.0.4
+91 silly idealTree │ ├── parse-passwd@1.0.0
+91 silly idealTree │ ├── path-root-regex@0.1.2
+91 silly idealTree │ ├── path-root@0.1.1
+91 silly idealTree │ ├── preserve@0.2.0
+91 silly idealTree │ ├── pretty-hrtime@1.0.3
+91 silly idealTree │ ├── randomatic@1.1.6
+91 silly idealTree │ ├── readable-stream@1.1.14
+91 silly idealTree │ ├── rechoir@0.6.2
+91 silly idealTree │ ├── regex-cache@0.4.3
+91 silly idealTree │ ├── repeat-element@1.1.2
+91 silly idealTree │ ├── repeat-string@1.6.1
+91 silly idealTree │ ├── replace-ext@0.0.1
+91 silly idealTree │ ├── resolve-dir@0.1.1
+91 silly idealTree │ ├── resolve@1.2.0
+91 silly idealTree │ ├── semver@4.3.6
+91 silly idealTree │ ├── sequencify@0.0.7
+91 silly idealTree │ ├── sparkles@1.0.0
+91 silly idealTree │ ├── stream-consume@0.1.0
+91 silly idealTree │ ├── string_decoder@0.10.31
+91 silly idealTree │ ├── strip-ansi@3.0.1
+91 silly idealTree │ ├── supports-color@2.0.0
+91 silly idealTree │ ├── tildify@1.2.0
+91 silly idealTree │ ├── time-stamp@1.0.1
+91 silly idealTree │ ├── unc-path-regex@0.1.2
+91 silly idealTree │ ├── user-home@1.1.1
+91 silly idealTree │ ├── v8flags@2.0.11
+91 silly idealTree │ ├─┬ vinyl-fs@0.3.14
+91 silly idealTree │ │ ├── clone@0.2.0
+91 silly idealTree │ │ ├── readable-stream@1.0.34
+91 silly idealTree │ │ ├── through2@0.6.5
+91 silly idealTree │ │ └── vinyl@0.4.6
+91 silly idealTree │ ├── vinyl@0.5.3
+91 silly idealTree │ ├── which@1.2.12
+91 silly idealTree │ ├── wrappy@1.0.2
+91 silly idealTree │ └── xtend@4.0.1
+91 silly idealTree ├── gulplog
+91 silly idealTree ├── has-ansi
+91 silly idealTree ├── has-gulplog
+91 silly idealTree ├── homedir-polyfill
+91 silly idealTree ├── inflight
+91 silly idealTree ├── inherits
+91 silly idealTree ├── ini
+91 silly idealTree ├── interpret
+91 silly idealTree ├── is-absolute
+91 silly idealTree ├── is-buffer
+91 silly idealTree ├── is-dotfile
+91 silly idealTree ├── is-equal-shallow
+91 silly idealTree ├── is-extendable
+91 silly idealTree ├── is-extglob
+91 silly idealTree ├── is-glob
+91 silly idealTree ├── is-number
+91 silly idealTree ├── is-posix-bracket
+91 silly idealTree ├── is-primitive
+91 silly idealTree ├── is-relative
+91 silly idealTree ├── is-unc-path
+91 silly idealTree ├── is-utf8
+91 silly idealTree ├── is-windows
+91 silly idealTree ├── isarray
+91 silly idealTree ├── isexe
+91 silly idealTree ├─┬ isobject@2.1.0
+91 silly idealTree │ └── isarray@1.0.0
+91 silly idealTree ├── kind-of
+91 silly idealTree ├── liftoff
+91 silly idealTree ├── lodash
+91 silly idealTree ├── lodash._basecopy
+91 silly idealTree ├── lodash._basetostring
+91 silly idealTree ├── lodash._basevalues
+91 silly idealTree ├── lodash._getnative
+91 silly idealTree ├── lodash._isiterateecall
+91 silly idealTree ├── lodash._reescape
+91 silly idealTree ├── lodash._reevaluate
+91 silly idealTree ├── lodash._reinterpolate
+91 silly idealTree ├── lodash._root
+91 silly idealTree ├── lodash.assignwith
+91 silly idealTree ├── lodash.escape
+91 silly idealTree ├── lodash.isarguments
+91 silly idealTree ├── lodash.isarray
+91 silly idealTree ├── lodash.isempty
+91 silly idealTree ├── lodash.isplainobject
+91 silly idealTree ├── lodash.isstring
+91 silly idealTree ├── lodash.keys
+91 silly idealTree ├── lodash.mapvalues
+91 silly idealTree ├── lodash.pick
+91 silly idealTree ├── lodash.restparam
+91 silly idealTree ├── lodash.template
+91 silly idealTree ├── lodash.templatesettings
+91 silly idealTree ├── lru-cache
+91 silly idealTree ├── map-cache
+91 silly idealTree ├── md5-hex
+91 silly idealTree ├── md5-o-matic
+91 silly idealTree ├── micromatch
+91 silly idealTree ├── minimatch
+91 silly idealTree ├── minimist
+91 silly idealTree ├─┬ mkdirp@0.5.1
+91 silly idealTree │ └── minimist@0.0.8
+91 silly idealTree ├── multipipe
+91 silly idealTree ├── natives
+91 silly idealTree ├── normalize-path
+91 silly idealTree ├── normalize.css@5.0.0
+91 silly idealTree ├── object-assign
+91 silly idealTree ├── object.omit
+91 silly idealTree ├── once
+91 silly idealTree ├── onetime
+91 silly idealTree ├── orchestrator
+91 silly idealTree ├── ordered-read-streams
+91 silly idealTree ├── os-homedir
+91 silly idealTree ├── os-tmpdir
+91 silly idealTree ├── parse-filepath
+91 silly idealTree ├── parse-glob
+91 silly idealTree ├── parse-passwd
+91 silly idealTree ├── path-exists
+91 silly idealTree ├── path-is-absolute
+91 silly idealTree ├── path-root
+91 silly idealTree ├── path-root-regex
+91 silly idealTree ├── pinkie
+91 silly idealTree ├── pinkie-promise
+91 silly idealTree ├── preserve
+91 silly idealTree ├── pretty-hrtime
+91 silly idealTree ├── process-nextick-args
+91 silly idealTree ├── pseudomap
+91 silly idealTree ├── randomatic
+91 silly idealTree ├── readable-stream
+91 silly idealTree ├── rechoir
+91 silly idealTree ├── regex-cache
+91 silly idealTree ├── repeat-element
+91 silly idealTree ├── repeat-string
+91 silly idealTree ├── replace-ext
+91 silly idealTree ├── resolve
+91 silly idealTree ├── resolve-dir
+91 silly idealTree ├─┬ rimraf@2.6.0
+91 silly idealTree │ ├── fs.realpath@1.0.0
+91 silly idealTree │ ├── glob@7.1.1
+91 silly idealTree │ ├── inflight@1.0.6
+91 silly idealTree │ ├── inherits@2.0.3
+91 silly idealTree │ ├── minimatch@3.0.3
+91 silly idealTree │ ├── once@1.4.0
+91 silly idealTree │ ├── path-is-absolute@1.0.1
+91 silly idealTree │ └── wrappy@1.0.2
+91 silly idealTree ├── semver
+91 silly idealTree ├── sequencify
+91 silly idealTree ├── set-immediate-shim
+91 silly idealTree ├── shebang-command
+91 silly idealTree ├── shebang-regex
+91 silly idealTree ├── sigmund
+91 silly idealTree ├── sparkles
+91 silly idealTree ├── stream-consume
+91 silly idealTree ├── string_decoder
+91 silly idealTree ├── strip-ansi
+91 silly idealTree ├─┬ strip-bom@1.0.0
+91 silly idealTree │ ├── first-chunk-stream@1.0.0
+91 silly idealTree │ └── is-utf8@0.2.1
+91 silly idealTree ├── supports-color
+91 silly idealTree ├─┬ through2@2.0.3
+91 silly idealTree │ ├── inherits@2.0.3
+91 silly idealTree │ ├── isarray@1.0.0
+91 silly idealTree │ ├── process-nextick-args@1.0.7
+91 silly idealTree │ ├── readable-stream@2.2.3
+91 silly idealTree │ ├── string_decoder@0.10.31
+91 silly idealTree │ ├── util-deprecate@1.0.2
+91 silly idealTree │ └── xtend@4.0.1
+91 silly idealTree ├── tildify
+91 silly idealTree ├── time-stamp
+91 silly idealTree ├── unc-path-regex
+91 silly idealTree ├── unique-stream
+91 silly idealTree ├── util-deprecate
+91 silly idealTree ├── v8flags
+91 silly idealTree ├── vinyl
+91 silly idealTree ├─┬ vinyl-fs@0.3.14
+91 silly idealTree │ ├── clone@0.2.0
+91 silly idealTree │ ├─┬ defaults@1.0.3
+91 silly idealTree │ │ └── clone@1.0.2
+91 silly idealTree │ ├── first-chunk-stream@1.0.0
+91 silly idealTree │ ├── gaze@0.5.2
+91 silly idealTree │ ├── glob-watcher@0.0.6
+91 silly idealTree │ ├── graceful-fs@3.0.11
+91 silly idealTree │ ├── inherits@2.0.3
+91 silly idealTree │ ├── is-utf8@0.2.1
+91 silly idealTree │ ├── isarray@0.0.1
+91 silly idealTree │ ├── minimist@0.0.8
+91 silly idealTree │ ├── mkdirp@0.5.1
+91 silly idealTree │ ├── natives@1.1.0
+91 silly idealTree │ ├── readable-stream@1.0.34
+91 silly idealTree │ ├── string_decoder@0.10.31
+91 silly idealTree │ ├── strip-bom@1.0.0
+91 silly idealTree │ ├── through2@0.6.5
+91 silly idealTree │ ├── vinyl@0.4.6
+91 silly idealTree │ └── xtend@4.0.1
+91 silly idealTree ├── waypoints@4.0.1
+91 silly idealTree ├── which
+91 silly idealTree ├── wrappy
+91 silly idealTree ├── xtend
+91 silly idealTree └── yallist
+92 silly generateActionsToTake Starting
+93 silly install generateActionsToTake
+94 silly generateActionsToTake Finishing
+95 silly diffTrees action count 4
+96 silly diffTrees add minimist@0.0.8
+97 silly diffTrees update font-awesome@4.7.0
+98 silly diffTrees add mkdirp@0.5.1
+99 silly diffTrees update waypoints@4.0.1
+100 silly decomposeActions action count 32
+101 silly decomposeActions fetch minimist@0.0.8
+102 silly decomposeActions extract minimist@0.0.8
+103 silly decomposeActions test minimist@0.0.8
+104 silly decomposeActions preinstall minimist@0.0.8
+105 silly decomposeActions build minimist@0.0.8
+106 silly decomposeActions install minimist@0.0.8
+107 silly decomposeActions postinstall minimist@0.0.8
+108 silly decomposeActions finalize minimist@0.0.8
+109 silly decomposeActions fetch font-awesome@4.7.0
+110 silly decomposeActions extract font-awesome@4.7.0
+111 silly decomposeActions test font-awesome@4.7.0
+112 silly decomposeActions preinstall font-awesome@4.7.0
+113 silly decomposeActions build font-awesome@4.7.0
+114 silly decomposeActions install font-awesome@4.7.0
+115 silly decomposeActions postinstall font-awesome@4.7.0
+116 silly decomposeActions finalize font-awesome@4.7.0
+117 silly decomposeActions fetch mkdirp@0.5.1
+118 silly decomposeActions extract mkdirp@0.5.1
+119 silly decomposeActions test mkdirp@0.5.1
+120 silly decomposeActions preinstall mkdirp@0.5.1
+121 silly decomposeActions build mkdirp@0.5.1
+122 silly decomposeActions install mkdirp@0.5.1
+123 silly decomposeActions postinstall mkdirp@0.5.1
+124 silly decomposeActions finalize mkdirp@0.5.1
+125 silly decomposeActions fetch waypoints@4.0.1
+126 silly decomposeActions extract waypoints@4.0.1
+127 silly decomposeActions test waypoints@4.0.1
+128 silly decomposeActions preinstall waypoints@4.0.1
+129 silly decomposeActions build waypoints@4.0.1
+130 silly decomposeActions install waypoints@4.0.1
+131 silly decomposeActions postinstall waypoints@4.0.1
+132 silly decomposeActions finalize waypoints@4.0.1
+133 silly executeActions Starting
+134 silly install executeActions
+135 silly doSerial global-install 0
+136 silly doParallel fetch 4
+137 verbose lock using /Users/ttn_js/.npm/_locks/staging-2a97280c1eec830a.lock for /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging
+138 silly doParallel extract 4
+139 silly extract minimist@0.0.8
+140 silly extract font-awesome@4.7.0
+141 silly extract mkdirp@0.5.1
+142 silly extract waypoints@4.0.1
+143 verbose unbuild node_modules/.staging/minimist-54a030d5
+144 verbose unbuild node_modules/.staging/mkdirp-cf8dadce
+145 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/minimist-54a030d5 is being purged from base /Users/ttn_js/Desktop/12week/portfolioV2
+146 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/minimist-54a030d5
+147 verbose unbuild node_modules/.staging/waypoints-e497df46
+148 verbose unbuild node_modules/.staging/font-awesome-da41a857
+149 verbose tar unpack /Users/ttn_js/.npm/minimist/0.0.8/package.tgz
+150 verbose tar unpacking to /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/minimist-54a030d5
+151 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/minimist-54a030d5 is being purged
+152 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/minimist-54a030d5
+153 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/mkdirp-cf8dadce is being purged from base /Users/ttn_js/Desktop/12week/portfolioV2
+154 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/mkdirp-cf8dadce
+155 silly gunzTarPerm modes [ '755', '644' ]
+156 verbose tar unpack /Users/ttn_js/.npm/mkdirp/0.5.1/package.tgz
+157 verbose tar unpacking to /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/mkdirp-cf8dadce
+158 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/mkdirp-cf8dadce is being purged
+159 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/mkdirp-cf8dadce
+160 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/waypoints-e497df46 is being purged from base /Users/ttn_js/Desktop/12week/portfolioV2
+161 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/waypoints-e497df46
+162 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/font-awesome-da41a857 is being purged from base /Users/ttn_js/Desktop/12week/portfolioV2
+163 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/font-awesome-da41a857
+164 silly gunzTarPerm modes [ '755', '644' ]
+165 verbose tar unpack /Users/ttn_js/.npm/waypoints/4.0.1/package.tgz
+166 verbose tar unpacking to /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/waypoints-e497df46
+167 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/waypoints-e497df46 is being purged
+168 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/waypoints-e497df46
+169 verbose tar unpack /Users/ttn_js/.npm/font-awesome/4.7.0/package.tgz
+170 verbose tar unpacking to /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/font-awesome-da41a857
+171 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/font-awesome-da41a857 is being purged
+172 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/font-awesome-da41a857
+173 silly gunzTarPerm modes [ '755', '644' ]
+174 silly gunzTarPerm modes [ '755', '644' ]
+175 silly gunzTarPerm extractEntry package.json
+176 silly gunzTarPerm extractEntry package.json
+177 silly gunzTarPerm extractEntry LICENSE
+178 silly gunzTarPerm extractEntry index.js
+179 silly gunzTarPerm extractEntry package.json
+180 silly gunzTarPerm extractEntry package.json
+181 silly gunzTarPerm extractEntry LICENSE
+182 silly gunzTarPerm extractEntry index.js
+183 silly gunzTarPerm extractEntry .npmignore
+184 silly gunzTarPerm extractEntry README.md
+185 silly gunzTarPerm extractEntry .npmignore
+186 silly gunzTarPerm extractEntry README.md
+187 silly gunzTarPerm extractEntry .travis.yml
+188 silly gunzTarPerm extractEntry example/parse.js
+189 silly gunzTarPerm extractEntry .travis.yml
+190 silly gunzTarPerm extractEntry bin/cmd.js
+191 silly gunzTarPerm extractEntry gulpfile.js
+192 silly gunzTarPerm extractEntry .travis.yml
+193 silly gunzTarPerm extractEntry HELP-US-OUT.txt
+194 silly gunzTarPerm extractEntry css/font-awesome.css
+195 silly gunzTarPerm extractEntry readme.markdown
+196 silly gunzTarPerm extractEntry test/dash.js
+197 silly gunzTarPerm extractEntry bin/usage.txt
+198 silly gunzTarPerm extractEntry examples/pow.js
+199 silly gunzTarPerm extractEntry CHANGELOG.md
+200 silly gunzTarPerm extractEntry css/font-awesome.css.map
+201 silly gunzTarPerm extractEntry CONTRIBUTING.md
+202 silly gunzTarPerm extractEntry test/default_bool.js
+203 silly gunzTarPerm extractEntry test/dotted.js
+204 silly gunzTarPerm extractEntry test/long.js
+205 silly gunzTarPerm extractEntry test/parse.js
+206 silly gunzTarPerm extractEntry test/parse_modified.js
+207 silly gunzTarPerm extractEntry test/short.js
+208 silly gunzTarPerm extractEntry test/whitespace.js
+209 silly gunzTarPerm extractEntry readme.markdown
+210 silly gunzTarPerm extractEntry test/chmod.js
+211 silly gunzTarPerm extractEntry .eslintrc
+212 silly gunzTarPerm extractEntry bower.json
+213 silly gunzTarPerm extractEntry css/font-awesome.min.css
+214 silly gunzTarPerm extractEntry fonts/FontAwesome.otf
+215 silly gunzTarPerm extractEntry test/opts_fs_sync.js
+216 silly gunzTarPerm extractEntry lib/jquery.waypoints.js
+217 silly gunzTarPerm extractEntry lib/jquery.waypoints.min.js
+218 silly gunzTarPerm extractEntry fonts/fontawesome-webfont.eot
+219 silly gunzTarPerm extractEntry lib/noframework.waypoints.js
+220 silly gunzTarPerm extractEntry lib/noframework.waypoints.min.js
+221 silly gunzTarPerm extractEntry test/perm.js
+222 silly gunzTarPerm extractEntry test/perm_sync.js
+223 silly gunzTarPerm extractEntry fonts/fontawesome-webfont.svg
+224 silly gunzTarPerm extractEntry test/opts_fs.js
+225 silly gunzTarPerm extractEntry test/rel.js
+226 silly gunzTarPerm extractEntry lib/waypoints.debug.js
+227 silly gunzTarPerm extractEntry lib/zepto.waypoints.js
+228 silly gunzTarPerm extractEntry test/return.js
+229 silly gunzTarPerm extractEntry test/return_sync.js
+230 silly gunzTarPerm extractEntry lib/zepto.waypoints.min.js
+231 silly gunzTarPerm extractEntry lib/shortcuts/infinite.js
+232 silly gunzTarPerm extractEntry test/root.js
+233 silly gunzTarPerm extractEntry test/sync.js
+234 silly gunzTarPerm extractEntry lib/shortcuts/infinite.min.js
+235 silly gunzTarPerm extractEntry lib/shortcuts/inview.js
+236 silly gunzTarPerm extractEntry lib/shortcuts/inview.min.js
+237 silly gunzTarPerm extractEntry lib/shortcuts/sticky.js
+238 silly gunzTarPerm extractEntry lib/shortcuts/sticky.min.js
+239 silly gunzTarPerm extractEntry licenses.txt
+240 silly gunzTarPerm extractEntry test/mkdirp.js
+241 silly gunzTarPerm extractEntry test/umask.js
+242 silly gunzTarPerm extractEntry fonts/fontawesome-webfont.ttf
+243 silly gunzTarPerm extractEntry test/clobber.js
+244 silly gunzTarPerm extractEntry test/umask_sync.js
+245 silly gunzTarPerm extractEntry test/adapter-fn-spec.js
+246 silly gunzTarPerm extractEntry test/debug-spec.js
+247 silly gunzTarPerm extractEntry fonts/fontawesome-webfont.woff
+248 silly gunzTarPerm extractEntry test/race.js
+249 silly gunzTarPerm extractEntry test/sticky-spec.js
+250 silly gunzTarPerm extractEntry test/group-spec.js
+251 silly gunzTarPerm extractEntry test/context-spec.js
+252 silly gunzTarPerm extractEntry test/inview-spec.js
+253 silly gunzTarPerm extractEntry fonts/fontawesome-webfont.woff2
+254 silly gunzTarPerm extractEntry test/settings.js
+255 silly gunzTarPerm extractEntry test/waypoint-spec.js
+256 silly gunzTarPerm extractEntry less/list.less
+257 silly gunzTarPerm extractEntry less/animated.less
+258 silly gunzTarPerm extractEntry less/core.less
+259 silly gunzTarPerm extractEntry less/fixed-width.less
+260 silly gunzTarPerm extractEntry test/infinite-spec.js
+261 silly gunzTarPerm extractEntry test/lib/coffee-script.js
+262 silly gunzTarPerm extractEntry less/font-awesome.less
+263 silly gunzTarPerm extractEntry less/icons.less
+264 silly gunzTarPerm extractEntry less/larger.less
+265 silly gunzTarPerm extractEntry test/lib/jasmine-html.js
+266 silly gunzTarPerm extractEntry test/lib/jasmine-jquery.js
+267 silly gunzTarPerm extractEntry less/bordered-pulled.less
+268 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/minimist-54a030d5/node_modules is being purged
+269 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/minimist-54a030d5/node_modules
+270 silly gunzTarPerm extractEntry test/lib/jasmine.js
+271 silly gunzTarPerm extractEntry less/mixins.less
+272 silly gunzTarPerm extractEntry less/path.less
+273 silly gunzTarPerm extractEntry less/rotated-flipped.less
+274 silly gunzTarPerm extractEntry less/screen-reader.less
+275 silly gunzTarPerm extractEntry test/lib/require.js
+276 silly gunzTarPerm extractEntry test/lib/testloader.js
+277 silly gunzTarPerm extractEntry less/stacked.less
+278 silly gunzTarPerm extractEntry less/variables.less
+279 silly gunzTarPerm extractEntry scss/_mixins.scss
+280 silly gunzTarPerm extractEntry test/lib/jasmine.css
+281 silly gunzTarPerm extractEntry test/fixtures/infinite.html
+282 silly gunzTarPerm extractEntry scss/_animated.scss
+283 silly gunzTarPerm extractEntry scss/_core.scss
+284 silly gunzTarPerm extractEntry scss/_fixed-width.scss
+285 silly gunzTarPerm extractEntry scss/_icons.scss
+286 silly gunzTarPerm extractEntry scss/_larger.scss
+287 silly gunzTarPerm extractEntry scss/_list.scss
+288 silly gunzTarPerm extractEntry test/fixtures/standard.html
+289 silly gunzTarPerm extractEntry test/fixtures/sticky.html
+290 silly gunzTarPerm extractEntry scss/_bordered-pulled.scss
+291 silly gunzTarPerm extractEntry scss/_path.scss
+292 silly gunzTarPerm extractEntry scss/_rotated-flipped.scss
+293 silly gunzTarPerm extractEntry scss/_screen-reader.scss
+294 silly gunzTarPerm extractEntry src/context.js
+295 silly gunzTarPerm extractEntry src/debug.js
+296 silly gunzTarPerm extractEntry scss/_stacked.scss
+297 silly gunzTarPerm extractEntry scss/_variables.scss
+298 silly gunzTarPerm extractEntry scss/font-awesome.scss
+299 silly gunzTarPerm extractEntry src/group.js
+300 silly gunzTarPerm extractEntry src/waypoint.js
+301 silly gunzTarPerm extractEntry src/adapters/jquery-zepto-fn-extension.js
+302 silly gunzTarPerm extractEntry src/adapters/jquery.js
+303 silly gunzTarPerm extractEntry src/adapters/noframework.js
+304 silly gunzTarPerm extractEntry src/adapters/zepto.js
+305 silly gunzTarPerm extractEntry src/shortcuts/infinite.js
+306 silly gunzTarPerm extractEntry src/shortcuts/inview.js
+307 silly gunzTarPerm extractEntry src/shortcuts/sticky.js
+308 silly gunzTarPerm extractEntry testem.json
+309 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/mkdirp-cf8dadce/node_modules is being purged
+310 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/mkdirp-cf8dadce/node_modules
+311 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/font-awesome-da41a857/node_modules is being purged
+312 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/font-awesome-da41a857/node_modules
+313 silly gentlyRm /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/waypoints-e497df46/node_modules is being purged
+314 verbose gentlyRm don't care about contents; nuking /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/waypoints-e497df46/node_modules
+315 silly doParallel preinstall 4
+316 silly preinstall minimist@0.0.8 /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/minimist-54a030d5
+317 info lifecycle minimist@0.0.8~preinstall: minimist@0.0.8
+318 silly preinstall font-awesome@4.7.0 /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/font-awesome-da41a857
+319 info lifecycle font-awesome@4.7.0~preinstall: font-awesome@4.7.0
+320 silly preinstall mkdirp@0.5.1 /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/mkdirp-cf8dadce
+321 info lifecycle mkdirp@0.5.1~preinstall: mkdirp@0.5.1
+322 silly preinstall waypoints@4.0.1 /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging/waypoints-e497df46
+323 info lifecycle waypoints@4.0.1~preinstall: waypoints@4.0.1
+324 silly lifecycle minimist@0.0.8~preinstall: no script for preinstall, continuing
+325 silly lifecycle font-awesome@4.7.0~preinstall: no script for preinstall, continuing
+326 silly lifecycle mkdirp@0.5.1~preinstall: no script for preinstall, continuing
+327 silly lifecycle waypoints@4.0.1~preinstall: no script for preinstall, continuing
+328 silly doReverseSerial remove 0
+329 silly doSerial move 0
+330 silly doSerial finalize 4
+331 silly finalize /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/mkdirp/node_modules/minimist
+332 silly finalize /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/font-awesome
+333 silly finalize /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/mkdirp
+334 verbose unlock done using /Users/ttn_js/.npm/_locks/staging-2a97280c1eec830a.lock for /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.staging
+335 silly rollbackFailedOptional Starting
+336 silly rollbackFailedOptional Finishing
+337 silly runTopLevelLifecycles Starting
+338 silly runTopLevelLifecycles Finishing
+339 silly install printInstalled
+340 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/dargs/package.json'
+341 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/dateformat/package.json'
+342 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/defaults/package.json'
+343 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/deprecated/package.json'
+344 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/detect-file/package.json'
+345 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/duplexer2/package.json'
+346 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/each-async/package.json'
+347 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/end-of-stream/package.json'
+348 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/escape-string-regexp/package.json'
+349 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/expand-brackets/package.json'
+350 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/expand-range/package.json'
+351 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/expand-tilde/package.json'
+352 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/extend/package.json'
+353 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/extglob/package.json'
+354 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/fancy-log/package.json'
+355 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/filename-regex/package.json'
+356 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/fill-range/package.json'
+357 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/findup-sync/package.json'
+358 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/find-index/package.json'
+359 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/fined/package.json'
+360 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/first-chunk-stream/package.json'
+361 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/flagged-respawn/package.json'
+362 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/for-in/package.json'
+363 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/for-own/package.json'
+364 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/fs-exists-sync/package.json'
+365 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/fs.realpath/package.json'
+366 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/gaze/package.json'
+367 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/glob/package.json'
+368 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/glob-base/package.json'
+369 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/glob-parent/package.json'
+370 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/glob-watcher/package.json'
+371 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/glob2base/package.json'
+372 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/global-modules/package.json'
+373 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/global-prefix/package.json'
+374 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/glogg/package.json'
+375 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/graceful-fs/package.json'
+376 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/gulplog/package.json'
+377 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/has-ansi/package.json'
+378 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/has-gulplog/package.json'
+379 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/homedir-polyfill/package.json'
+380 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/inflight/package.json'
+381 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/inherits/package.json'
+382 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/ini/package.json'
+383 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/interpret/package.json'
+384 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-absolute/package.json'
+385 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-buffer/package.json'
+386 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-dotfile/package.json'
+387 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-equal-shallow/package.json'
+388 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-extendable/package.json'
+389 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-extglob/package.json'
+390 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-glob/package.json'
+391 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-number/package.json'
+392 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-posix-bracket/package.json'
+393 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-primitive/package.json'
+394 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-relative/package.json'
+395 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-unc-path/package.json'
+396 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-utf8/package.json'
+397 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/is-windows/package.json'
+398 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/isarray/package.json'
+399 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/isexe/package.json'
+400 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/kind-of/package.json'
+401 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/liftoff/package.json'
+402 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash/package.json'
+403 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash._basecopy/package.json'
+404 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash._basetostring/package.json'
+405 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash._basevalues/package.json'
+406 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash._getnative/package.json'
+407 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash._isiterateecall/package.json'
+408 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash._reescape/package.json'
+409 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash._reevaluate/package.json'
+410 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash._reinterpolate/package.json'
+411 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash._root/package.json'
+412 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.assignwith/package.json'
+413 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.escape/package.json'
+414 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.isarguments/package.json'
+415 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.isarray/package.json'
+416 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.isempty/package.json'
+417 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.isplainobject/package.json'
+418 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.isstring/package.json'
+419 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.keys/package.json'
+420 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.mapvalues/package.json'
+421 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.pick/package.json'
+422 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.restparam/package.json'
+423 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.template/package.json'
+424 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lodash.templatesettings/package.json'
+425 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/lru-cache/package.json'
+426 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/map-cache/package.json'
+427 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/md5-hex/package.json'
+428 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/md5-o-matic/package.json'
+429 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/micromatch/package.json'
+430 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/minimatch/package.json'
+431 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/minimist/package.json'
+432 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/multipipe/package.json'
+433 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/natives/package.json'
+434 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/normalize-path/package.json'
+435 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/object-assign/package.json'
+436 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/object.omit/package.json'
+437 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/once/package.json'
+438 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/onetime/package.json'
+439 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/orchestrator/package.json'
+440 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/ordered-read-streams/package.json'
+441 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/os-homedir/package.json'
+442 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/os-tmpdir/package.json'
+443 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/parse-filepath/package.json'
+444 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/parse-glob/package.json'
+445 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/parse-passwd/package.json'
+446 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/path-exists/package.json'
+447 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/path-is-absolute/package.json'
+448 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/path-root/package.json'
+449 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/path-root-regex/package.json'
+450 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/pinkie/package.json'
+451 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/preserve/package.json'
+452 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/pinkie-promise/package.json'
+453 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/pretty-hrtime/package.json'
+454 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/process-nextick-args/package.json'
+455 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/pseudomap/package.json'
+456 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/randomatic/package.json'
+457 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/readable-stream/package.json'
+458 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/rechoir/package.json'
+459 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/regex-cache/package.json'
+460 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/repeat-element/package.json'
+461 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/repeat-string/package.json'
+462 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/replace-ext/package.json'
+463 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/resolve-dir/package.json'
+464 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/resolve/package.json'
+465 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/semver/package.json'
+466 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/sequencify/package.json'
+467 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/set-immediate-shim/package.json'
+468 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/shebang-command/package.json'
+469 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/shebang-regex/package.json'
+470 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/sigmund/package.json'
+471 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/sparkles/package.json'
+472 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/stream-consume/package.json'
+473 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/string_decoder/package.json'
+474 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/strip-ansi/package.json'
+475 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/supports-color/package.json'
+476 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/tildify/package.json'
+477 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/time-stamp/package.json'
+478 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/unc-path-regex/package.json'
+479 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/unique-stream/package.json'
+480 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/util-deprecate/package.json'
+481 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/v8flags/package.json'
+482 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/vinyl/package.json'
+483 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/wrappy/package.json'
+484 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/which/package.json'
+485 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/xtend/package.json'
+486 warn enoent ENOENT: no such file or directory, open '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/yallist/package.json'
+487 verbose stack Error: ENOTEMPTY: directory not empty, rename '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/mkdirp' -> '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.mkdirp.DELETE'
+487 verbose stack     at moveAway (/usr/local/lib/node_modules/npm/lib/install/action/finalize.js:38:5)
+487 verbose stack     at destStatted (/usr/local/lib/node_modules/npm/lib/install/action/finalize.js:27:7)
+487 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+487 verbose stack
+487 verbose stack Error: ENOTEMPTY: directory not empty, rename '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/mkdirp' -> '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.mkdirp.DELETE'
+487 verbose stack     at Error (native)
+488 verbose cwd /Users/ttn_js/Desktop/12week/portfolioV2
+489 error Darwin 16.4.0
+490 error argv "/usr/local/Cellar/node/5.5.0/bin/node" "/usr/local/bin/npm" "install" "mkdirp"
+491 error node v5.5.0
+492 error npm  v3.5.3
+493 error path /Users/ttn_js/Desktop/12week/portfolioV2/node_modules/mkdirp
+494 error code ENOTEMPTY
+495 error errno -66
+496 error syscall rename
+497 error ENOTEMPTY: directory not empty, rename '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/mkdirp' -> '/Users/ttn_js/Desktop/12week/portfolioV2/node_modules/.mkdirp.DELETE'
+498 error If you need help, you may report this error at:
+498 error     <https://github.com/npm/npm/issues>
+499 verbose exit [ -66, true ]
