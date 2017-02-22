@@ -16,7 +16,7 @@ $(window).scroll(function(){
 
 // scrolling
 $( 'button' ).click(function(){
-	window.scroll({ top: window.innerHeight, left: 0, behavior: 'smooth' });
+  window.scroll({ top: window.innerHeight + 30, left: 0, behavior: 'smooth' });
 });
 
 $(document).on('click', 'a[href^="#"]', function(e) {
@@ -32,23 +32,23 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
     switch(id) {
         case "#home":
-           	window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+            window.scroll({ top: 0, left: 0, behavior: 'smooth' });
             $("#h").blur();
             break;
         case "#about":
-            window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' }); 
-            $("#a").blur();        		
+            window.scroll({ top: window.innerHeight + pos - 50, left: 0, behavior: 'smooth' }); 
+            $("#a").blur();           
             break;
         case "#portfolio":
-            window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' });
+            window.scroll({ top: window.innerHeight + pos - 50, left: 0, behavior: 'smooth' });
             $("#p").blur();
             break;
         case "#resume":
-            window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' });
+            window.scroll({ top: window.innerHeight + pos - 50, left: 0, behavior: 'smooth' });
             $("#r").blur();
             break;
         case "#contact":
-            window.scroll({ top: window.innerHeight + pos - 80, left: 0, behavior: 'smooth' });
+            window.scroll({ top: window.innerHeight + pos - 50, left: 0, behavior: 'smooth' });
             $("#c").blur();
             break;
         default:
@@ -59,19 +59,19 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 var about = new Waypoint({
   element: document.getElementById('about'),
   handler: function(direction) {
-  	if(direction === "down"){
-  		$("#a").addClass('selected');
-  		$("#h").removeClass('selected');
-  		$("#p").removeClass('selected');
-  		$("#r").removeClass('selected');
-  		$("#c").removeClass('selected');
-  	}else{
-  		$("#h").addClass('selected');
-  		$("#a").removeClass('selected');
-  		$("#p").removeClass('selected');
-  		$("#r").removeClass('selected');
-  		$("#c").removeClass('selected');
-  	}
+    if(direction === "down"){
+      $("#a").addClass('selected');
+      $("#h").removeClass('selected');
+      $("#p").removeClass('selected');
+      $("#r").removeClass('selected');
+      $("#c").removeClass('selected');
+    }else{
+      $("#h").addClass('selected');
+      $("#a").removeClass('selected');
+      $("#p").removeClass('selected');
+      $("#r").removeClass('selected');
+      $("#c").removeClass('selected');
+    }
   },
   offset: 150
 });
@@ -79,19 +79,19 @@ var about = new Waypoint({
 var portfolio = new Waypoint({
   element: document.getElementById('portfolio'),
   handler: function(direction) {
-  	if(direction === "down"){
-  		$("#p").addClass('selected');
-  		$("#h").removeClass('selected');
-  		$("#a").removeClass('selected');
-  		$("#r").removeClass('selected');
-  		$("#c").removeClass('selected');
-  	}else{
-  		$("#a").addClass('selected');
-  		$("#h").removeClass('selected');
-  		$("#p").removeClass('selected');
-  		$("#r").removeClass('selected');
-  		$("#c").removeClass('selected');
-  	}
+    if(direction === "down"){
+      $("#p").addClass('selected');
+      $("#h").removeClass('selected');
+      $("#a").removeClass('selected');
+      $("#r").removeClass('selected');
+      $("#c").removeClass('selected');
+    }else{
+      $("#a").addClass('selected');
+      $("#h").removeClass('selected');
+      $("#p").removeClass('selected');
+      $("#r").removeClass('selected');
+      $("#c").removeClass('selected');
+    }
   },
   offset: 150
 });
@@ -99,19 +99,19 @@ var portfolio = new Waypoint({
 var resume = new Waypoint({
   element: document.getElementById('resume'),
   handler: function(direction) {
-  	if(direction === "down"){
-  		$("#r").addClass('selected');
-  		$("#h").removeClass('selected');
-  		$("#p").removeClass('selected');
-  		$("#a").removeClass('selected');
-  		$("#c").removeClass('selected');
-  	}else{
-  		$("#p").addClass('selected');
-  		$("#h").removeClass('selected');
-  		$("#a").removeClass('selected');
-  		$("#r").removeClass('selected');
-  		$("#c").removeClass('selected');
-  	}
+    if(direction === "down"){
+      $("#r").addClass('selected');
+      $("#h").removeClass('selected');
+      $("#p").removeClass('selected');
+      $("#a").removeClass('selected');
+      $("#c").removeClass('selected');
+    }else{
+      $("#p").addClass('selected');
+      $("#h").removeClass('selected');
+      $("#a").removeClass('selected');
+      $("#r").removeClass('selected');
+      $("#c").removeClass('selected');
+    }
   },
   offset: 150
 });
@@ -119,19 +119,19 @@ var resume = new Waypoint({
 var contact = new Waypoint({
   element: document.getElementById('contact'),
   handler: function(direction) {
-  	if(direction === "down"){
-  		$("#c").addClass('selected');
-  		$("#h").removeClass('selected');
-  		$("#p").removeClass('selected');
-  		$("#r").removeClass('selected');
-  		$("#a").removeClass('selected');
-  	}else{
-  		$("#r").addClass('selected');
-  		$("#h").removeClass('selected');
-  		$("#p").removeClass('selected');
-  		$("#a").removeClass('selected');
-  		$("#c").removeClass('selected');
-  	}
+    if(direction === "down"){
+      $("#c").addClass('selected');
+      $("#h").removeClass('selected');
+      $("#p").removeClass('selected');
+      $("#r").removeClass('selected');
+      $("#a").removeClass('selected');
+    }else{
+      $("#r").addClass('selected');
+      $("#h").removeClass('selected');
+      $("#p").removeClass('selected');
+      $("#a").removeClass('selected');
+      $("#c").removeClass('selected');
+    }
   },
   offset: 150
 });
@@ -141,15 +141,15 @@ $( '.back-to-top' ).click(function(){
   window.scroll({ top: 0, left: 0, behavior: 'smooth' });
 });
 // scroll to top in refresh
-// $(window).on('beforeunload', function() {
-//     $(window).scrollTop(0);
-// });
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
 
 // type it out
 var inputBox = document.querySelector("#mytypingText"),
-	myString = "web developer & design enthusiast",
-	myArray = myString.split(""),
-	loopTimer;
+  myString = "web developer & design enthusiast",
+  myArray = myString.split(""),
+  loopTimer;
 
 var frameLoop = function() {
     if (myArray.length > 0) {
@@ -161,7 +161,7 @@ var frameLoop = function() {
 }
 
 $( document ).ready(function(){
-	frameLoop();
+  frameLoop();
 });
 
 
