@@ -72,6 +72,12 @@ var inputBox = document.querySelector("#mytypingText"),
   myArray = myString.split(""),
   loopTimer;
 
+
+if(window.location.href.includes("thanks")){
+  myString = "I'll get back to you soon.";
+  myArray = myString.split("");
+}
+
 var frameLoop = function() {
     if (myArray.length > 0) {
         inputBox.innerHTML += myArray.shift()
