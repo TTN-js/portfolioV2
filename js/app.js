@@ -56,84 +56,86 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     } 
 });
 
-var about = new Waypoint({
-  element: document.getElementById('about'),
-  handler: function(direction) {
-    if(direction === "down"){
-      $("#a").addClass('selected');
-      $("#h").removeClass('selected');
-      $("#p").removeClass('selected');
-      $("#r").removeClass('selected');
-      $("#c").removeClass('selected');
-    }else{
-      $("#h").addClass('selected');
-      $("#a").removeClass('selected');
-      $("#p").removeClass('selected');
-      $("#r").removeClass('selected');
-      $("#c").removeClass('selected');
-    }
-  },
-  offset: 150
-});
+$(document).ready(function() {
+  var about = new Waypoint({
+    element: document.getElementById('about'),
+    handler: function(direction) {
+      if(direction === "down"){
+        $("#a").addClass('selected');
+        $("#h").removeClass('selected');
+        $("#p").removeClass('selected');
+        $("#r").removeClass('selected');
+        $("#c").removeClass('selected');
+      }else{
+        $("#h").addClass('selected');
+        $("#a").removeClass('selected');
+        $("#p").removeClass('selected');
+        $("#r").removeClass('selected');
+        $("#c").removeClass('selected');
+      }
+    },
+    offset: 150
+  });
 
-var portfolio = new Waypoint({
-  element: document.getElementById('portfolio'),
-  handler: function(direction) {
-    if(direction === "down"){
-      $("#p").addClass('selected');
-      $("#h").removeClass('selected');
-      $("#a").removeClass('selected');
-      $("#r").removeClass('selected');
-      $("#c").removeClass('selected');
-    }else{
-      $("#a").addClass('selected');
-      $("#h").removeClass('selected');
-      $("#p").removeClass('selected');
-      $("#r").removeClass('selected');
-      $("#c").removeClass('selected');
-    }
-  },
-  offset: 150
-});
+  var portfolio = new Waypoint({
+    element: document.getElementById('portfolio'),
+    handler: function(direction) {
+      if(direction === "down"){
+        $("#p").addClass('selected');
+        $("#h").removeClass('selected');
+        $("#a").removeClass('selected');
+        $("#r").removeClass('selected');
+        $("#c").removeClass('selected');
+      }else{
+        $("#a").addClass('selected');
+        $("#h").removeClass('selected');
+        $("#p").removeClass('selected');
+        $("#r").removeClass('selected');
+        $("#c").removeClass('selected');
+      }
+    },
+    offset: 150
+  });
 
-var resume = new Waypoint({
-  element: document.getElementById('resume'),
-  handler: function(direction) {
-    if(direction === "down"){
-      $("#r").addClass('selected');
-      $("#h").removeClass('selected');
-      $("#p").removeClass('selected');
-      $("#a").removeClass('selected');
-      $("#c").removeClass('selected');
-    }else{
-      $("#p").addClass('selected');
-      $("#h").removeClass('selected');
-      $("#a").removeClass('selected');
-      $("#r").removeClass('selected');
-      $("#c").removeClass('selected');
-    }
-  },
-  offset: 150
-});
+  var resume = new Waypoint({
+    element: document.getElementById('resume'),
+    handler: function(direction) {
+      if(direction === "down"){
+        $("#r").addClass('selected');
+        $("#h").removeClass('selected');
+        $("#p").removeClass('selected');
+        $("#a").removeClass('selected');
+        $("#c").removeClass('selected');
+      }else{
+        $("#p").addClass('selected');
+        $("#h").removeClass('selected');
+        $("#a").removeClass('selected');
+        $("#r").removeClass('selected');
+        $("#c").removeClass('selected');
+      }
+    },
+    offset: 150
+  });
 
-var contact = new Waypoint({
-  element: document.getElementById('contact'),
-  handler: function(direction) {
-    if(direction === "down"){
-      $("#c").addClass('selected');
-      $("#h").removeClass('selected');
-      $("#p").removeClass('selected');
-      $("#r").removeClass('selected');
-      $("#a").removeClass('selected');
-    }else{
-      $("#r").addClass('selected');
-      $("#h").removeClass('selected');
-      $("#p").removeClass('selected');
-      $("#a").removeClass('selected');
-      $("#c").removeClass('selected');
-    }
-  },
-  offset: 150
+  var contact = new Waypoint({
+    element: document.getElementById('contact'),
+    handler: function(direction) {
+      if(direction === "down"){
+        $("#c").addClass('selected');
+        $("#h").removeClass('selected');
+        $("#p").removeClass('selected');
+        $("#r").removeClass('selected');
+        $("#a").removeClass('selected');
+      }else{
+        $("#r").addClass('selected');
+        $("#h").removeClass('selected');
+        $("#p").removeClass('selected');
+        $("#a").removeClass('selected');
+        $("#c").removeClass('selected');
+      }
+    },
+    offset: 150
+  });
 });
 
 // scroll to the top
@@ -161,7 +163,7 @@ var frameLoop = function() {
     var loopTimer = setTimeout("frameLoop()", 90)
 }
 
-$( document ).ready(function(){
+$(document).ready(function(){
   frameLoop();
 });
 
@@ -212,7 +214,7 @@ var dataObjToHTML = function(singleRepo){
 }
 
 $( document ).ready(function(){
-promiseThomas.then(showRepo);
+  promiseThomas.then(showRepo);
 }); 
 
 
