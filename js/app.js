@@ -14,10 +14,10 @@ $(window).scroll(function(){
   }
 });
 
-// scrolling, need to find a better way to scroll to div vs height 
+// scrolling
 $( 'button' ).click(function(){
     // window.scroll({ top: window.innerHeight + 30, left: 0, behavior: 'smooth' });
-    $("html, body").animate({ scrollTop: 780 }, 700);
+    $("html, body").animate({scrollTop:$('#about').offset().top - 120}, 700);
 });
 
 $(document).on('click', 'a[href^="#"]', function(e) {
@@ -33,27 +33,27 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
     switch(id) {
         case "#home":
-            $("html, body").animate({ scrollTop: 0 }, 700);
-            $("#h").blur();
-            break;
+          $("html, body").animate({ scrollTop: 0 }, 700);
+          $("#h").blur();
+          break;
         case "#about":
-           $("html, body").animate({ scrollTop: 780 }, 700); 
-            $("#a").blur();           
-            break;
+          $("html, body").animate({scrollTop:$('#about').offset().top - 65}, 700); 
+          $("#a").blur();           
+          break;
         case "#portfolio":
-           $("html, body").animate({ scrollTop: 1550 }, 700); 
-            $("#p").blur();
-            break;
+          $("html, body").animate({scrollTop:$('#portfolio').offset().top - 65}, 700); 
+          $("#p").blur();
+          break;
         case "#resume":
-           $("html, body").animate({ scrollTop: 2320 }, 700);
-            $("#r").blur();
-            break;
+          $("html, body").animate({scrollTop:$('#resume').offset().top - 65}, 700);
+          $("#r").blur();
+          break;
         case "#contact":
-            $("html, body").animate({ scrollTop: 3120 }, 700);
-            $("#c").blur();
-            break;
+          $("html, body").animate({scrollTop:$('#contact').offset().top - 65}, 700);
+          $("#c").blur();
+          break;
         default:
-            $("html, body").animate({ scrollTop: 0 }, 700);
+          $("html, body").animate({ scrollTop: 0 }, 700);
     } 
 });
 
