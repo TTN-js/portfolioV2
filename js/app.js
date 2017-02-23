@@ -5,7 +5,7 @@ console.log($);
 var nb = $(".navbar");
 
 $(window).scroll(function(){
-  if($(this).scrollTop() > window.innerHeight - 1){
+  if($(this).scrollTop() >= window.innerHeight - 10){
     nb.removeClass("navbar");
     nb.addClass("main-nav-scrolled");
   } else {
@@ -14,7 +14,7 @@ $(window).scroll(function(){
   }
 });
 
-// scrolling
+// scrolling, need to find a better way to scroll to div vs height 
 $( 'button' ).click(function(){
     // window.scroll({ top: window.innerHeight + 30, left: 0, behavior: 'smooth' });
     $("html, body").animate({ scrollTop: 780 }, 700);
