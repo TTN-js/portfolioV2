@@ -135,7 +135,7 @@ $( document ).ready(function(){
   promiseThomas.then(showRepo);
 }); 
 
-
+$(document).ready(function() {
   var about = new Waypoint({
     element: document.getElementById('about'),
     handler: function(direction) {
@@ -215,5 +215,5 @@ $( document ).ready(function(){
     },
     offset: 150
   });
-
+});
 
