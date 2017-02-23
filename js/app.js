@@ -56,6 +56,85 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     } 
 });
 
+// scroll to the top
+$('.back-to-top').click(function(){
+     $("html, body").animate({ scrollTop: 0 }, 700);
+});
+
+// scroll to top in refresh
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
+
+// type it out
+var inputBox = document.querySelector("#mytypingText"),
+  myString = "web developer & design enthusiast",
+  myArray = myString.split(""),
+  loopTimer;
+
+var frameLoop = function() {
+    if (myArray.length > 0) {
+        inputBox.innerHTML += myArray.shift()
+    } else {
+        clearTimeout(loopTimer)
+    }
+    var loopTimer = setTimeout("frameLoop()", 90)
+}
+
+$(document).ready(function(){
+  frameLoop();
+});
+
+
+//github 
+var myGitRepoURl = "https://api.github.com/users/ttn-js/repos?sort=updated",
+    promiseThomas = $.getJSON(myGitRepoURl),
+    github = document.querySelector("#github");
+
+var showRepo = function(jsonRepo) {
+
+    var newHTMLString = "",
+        dataArray = jsonRepo; 
+
+    var repoHeader =  '<div id="gh_label" style="text-align:center;"><i class="fa fa-github-alt fa-2x"></i><h4 style="display: inline; padding:0.5em;">GitHub Repositories</h4></div>'
+        repoHeader += '<a href="https://github.com/TTN-js" target="_blank">'
+        repoHeader += '<span class="divider" style="margin-top:10px; margin-bottom:0px;"></span>'
+
+    github.innerHTML = repoHeader;
+
+    var repoContainer = '<div id="gh_list" style="height: 70vh; overflow: scroll;"></div>';
+
+    github.innerHTML += repoContainer;
+
+    var gh_list = document.querySelector("#gh_list");
+
+    console.log(dataArray);
+    for (var i =  0; i < dataArray.length; i++){
+      var singleRepo = dataArray[i];
+      // console.log(singleRepo);
+      newHTMLString += dataObjToHTML(singleRepo);
+    }
+    gh_list.innerHTML += newHTMLString;
+}
+
+var dataObjToHTML = function(singleRepo){
+
+  var repoHTML  = '<section id="repo_list">' 
+      repoHTML += '<ul class="repoBox" style="padding:7px; margin-top:5px; margin-bottom:5px; background-color:rgba(0,0,0,0.2); border-radius:5px;">' 
+      repoHTML += '<a href="'+singleRepo.clone_url+'" target="_blank">'
+      repoHTML += '<p class="repoName" style="font-size:15px; margin-bottom:7px;">' + singleRepo.name +'</p>'
+      repoHTML += '</a>'
+      repoHTML += '<p class="description" style="margin-bottom:0px; font-size:12px">' + singleRepo.description +'</p>'
+      repoHTML += '</ul>'
+      repoHTML += '</section>'
+
+  return repoHTML
+}
+
+$( document ).ready(function(){
+  promiseThomas.then(showRepo);
+}); 
+
 $(document).ready(function() {
   var about = new Waypoint({
     element: document.getElementById('about'),
@@ -137,84 +216,4 @@ $(document).ready(function() {
     offset: 150
   });
 });
-
-// scroll to the top
-$('.back-to-top').click(function(){
-     $("html, body").animate({ scrollTop: 0 }, 700);
-});
-
-// scroll to top in refresh
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-});
-
-// type it out
-var inputBox = document.querySelector("#mytypingText"),
-  myString = "web developer & design enthusiast",
-  myArray = myString.split(""),
-  loopTimer;
-
-var frameLoop = function() {
-    if (myArray.length > 0) {
-        inputBox.innerHTML += myArray.shift()
-    } else {
-        clearTimeout(loopTimer)
-    }
-    var loopTimer = setTimeout("frameLoop()", 90)
-}
-
-$(document).ready(function(){
-  frameLoop();
-});
-
-
-//github 
-var myGitRepoURl = "https://api.github.com/users/ttn-js/repos?sort=updated",
-    promiseThomas = $.getJSON(myGitRepoURl),
-    github = document.querySelector("#github");
-
-var showRepo = function(jsonRepo) {
-
-    var newHTMLString = "",
-        dataArray = jsonRepo; 
-
-    var repoHeader =  '<div id="gh_label" style="text-align:center;"><i class="fa fa-github-alt fa-2x"></i><h4 style="display: inline; padding:0.5em;">GitHub Repositories</h4></div>'
-        repoHeader += '<a href="https://github.com/TTN-js" target="_blank">'
-        repoHeader += '<span class="divider" style="margin-top:10px; margin-bottom:0px;"></span>'
-
-    github.innerHTML = repoHeader;
-
-    var repoContainer = '<div id="gh_list" style="height: 70vh; overflow: scroll;"></div>';
-
-    github.innerHTML += repoContainer;
-
-    var gh_list = document.querySelector("#gh_list");
-
-    console.log(dataArray);
-    for (var i =  0; i < dataArray.length; i++){
-      var singleRepo = dataArray[i];
-      // console.log(singleRepo);
-      newHTMLString += dataObjToHTML(singleRepo);
-    }
-    gh_list.innerHTML += newHTMLString;
-}
-
-var dataObjToHTML = function(singleRepo){
-
-  var repoHTML  = '<section id="repo_list">' 
-      repoHTML += '<ul class="repoBox" style="padding:7px; margin-top:5px; margin-bottom:5px; background-color:rgba(0,0,0,0.2); border-radius:5px;">' 
-      repoHTML += '<a href="'+singleRepo.clone_url+'" target="_blank">'
-      repoHTML += '<p class="repoName" style="font-size:15px; margin-bottom:7px;">' + singleRepo.name +'</p>'
-      repoHTML += '</a>'
-      repoHTML += '<p class="description" style="margin-bottom:0px; font-size:12px">' + singleRepo.description +'</p>'
-      repoHTML += '</ul>'
-      repoHTML += '</section>'
-
-  return repoHTML
-}
-
-$( document ).ready(function(){
-  promiseThomas.then(showRepo);
-}); 
-
 
