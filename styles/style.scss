@@ -102,6 +102,7 @@ section h1{
 	}
 
 	.col-sm-8{
+		overflow: scroll;
 		padding: 10px 50px 0 0;
 	}
 }
@@ -171,12 +172,26 @@ section h1{
 	margin: 0 auto;
 
 	#resume-frame{
+		overflow: scroll;
+		height: 80vh;
+		width: 44%;
+		margin: 0 auto;
 
+		img{
+			width: 100%;
+			height: 100vh;
+		}
 	}
 }
 
 #contact{
 	height: 80vh;
+
+	#back-to-top{
+		display: inline;
+		color: #fff;
+	}
+
 }
 
 .back-to-top {
@@ -202,6 +217,8 @@ footer{
   text-align: right;
   color: #31b0d5;
   font-size: 0.8em;
+  padding-top:10px; 
+  padding-bottom:10px;
 
   p a:hover{
   	color: #fff;
