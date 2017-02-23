@@ -15,7 +15,7 @@ $(window).scroll(function(){
 });
 
 // scrolling
-$( 'button' ).click(function(){
+$('button').click(function(){
     $("html, body").animate({scrollTop:$('#about').offset().top - 120}, 700);
 });
 
@@ -137,9 +137,10 @@ var contact = new Waypoint({
 });
 
 // scroll to the top
-$( '.back-to-top' ).click(function(){
-  $("html, body").animate({ scrollTop: 0 }, 700);
+$('.back-to-top').click(function(){
+     $("html, body").animate({ scrollTop: 0 }, 700);
 });
+
 // scroll to top in refresh
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
