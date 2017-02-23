@@ -16,7 +16,8 @@ $(window).scroll(function(){
 
 // scrolling
 $( 'button' ).click(function(){
-  window.scroll({ top: window.innerHeight + 30, left: 0, behavior: 'smooth' });
+    // window.scroll({ top: window.innerHeight + 30, left: 0, behavior: 'smooth' });
+    $("html, body").animate({ scrollTop: 780 }, 700);
 });
 
 $(document).on('click', 'a[href^="#"]', function(e) {
@@ -32,27 +33,27 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
     switch(id) {
         case "#home":
-            window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+            $("html, body").animate({ scrollTop: 0 }, 700);
             $("#h").blur();
             break;
         case "#about":
-            window.scroll({ top: window.innerHeight + pos - 50, left: 0, behavior: 'smooth' }); 
+           $("html, body").animate({ scrollTop: 780 }, 700); 
             $("#a").blur();           
             break;
         case "#portfolio":
-            window.scroll({ top: window.innerHeight + pos - 50, left: 0, behavior: 'smooth' });
+           $("html, body").animate({ scrollTop: 1550 }, 700); 
             $("#p").blur();
             break;
         case "#resume":
-            window.scroll({ top: window.innerHeight + pos - 50, left: 0, behavior: 'smooth' });
+           $("html, body").animate({ scrollTop: 2320 }, 700);
             $("#r").blur();
             break;
         case "#contact":
-            window.scroll({ top: window.innerHeight + pos - 50, left: 0, behavior: 'smooth' });
+            $("html, body").animate({ scrollTop: 3120 }, 700);
             $("#c").blur();
             break;
         default:
-            window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+            $("html, body").animate({ scrollTop: 0 }, 700);
     } 
 });
 
@@ -138,7 +139,8 @@ var contact = new Waypoint({
 
 // scroll to the top
 $( '.back-to-top' ).click(function(){
-  window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  // window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  $("html, body").animate({ scrollTop: 0 }, 700);
 });
 // scroll to top in refresh
 $(window).on('beforeunload', function() {
