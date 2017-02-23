@@ -211,6 +211,8 @@ var dataObjToHTML = function(singleRepo){
   return repoHTML
 }
 
-promiseThomas.then(showRepo) 
+$( document ).ready(function(){
+promiseThomas.then(showRepo);
+}); 
 
 
