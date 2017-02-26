@@ -62,9 +62,9 @@ $('.back-to-top').click(function(){
 });
 
 // scroll to top in refresh
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-});
+// $(window).on('beforeunload', function() {
+//     $(window).scrollTop(0);
+// });
 
 // type it out
 var inputBox = document.querySelector("#mytypingText"),
