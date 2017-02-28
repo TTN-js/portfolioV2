@@ -80,7 +80,7 @@ section h1{
 }
 
 #about{
-	margin-bottom: 30px;
+	min-height: 100vh;
 
 	#profile-pic-container{
 		font-size: 1.2em;
@@ -107,12 +107,14 @@ section h1{
 }
 
 #portfolio{
+	min-height: 100vh;
 	margin-bottom: 30px;
 
 	#work{
 		padding-right: 0px !important;
 		height: 70vh;
 		overflow: scroll;
+		margin-bottom: 10px;
 	}
 
 	#gallery{
@@ -172,8 +174,10 @@ section h1{
 }
 
 #resume{
+	min-height: 80vh;
 	width:100%;  
 	margin: 0 auto;
+	margin-bottom: 70px;
 
 	#resume-frame{
 		width: 55%;
@@ -187,7 +191,8 @@ section h1{
 }
 
 #contact{
-	height: 80vh;
+	min-height: 80vh;
+	margin-bottom:20px; 
 
 	#back-to-top{
 		display: inline;
