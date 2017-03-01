@@ -31,16 +31,18 @@ section h1{
 
 	    h1{
 		    color: #fff;
-		    font-size: 62px;
+		    font-size: 62px !important;
+		    font-weight: 300;
 		    letter-spacing: -1px;
 		    margin-top: -11px;
 		    margin-bottom: 0;
 		    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 	    }
 
 	    h2{
 	    	color: #E4D7B1;
-	    	font-size: 50px;
+	    	font-size: 50px !important;
 	    	letter-spacing: -1px;
 	    	line-height: 2;
 	    	margin-bottom: 5px;
@@ -48,7 +50,7 @@ section h1{
 	    	font-family: courier new;
 	    }
 
-	    button{
+	    #action-button{
 	    	cursor: pointer;
 	    }
     }
@@ -80,7 +82,7 @@ section h1{
 }
 
 #about{
-	height: 100vh;
+	min-height: 100vh;
 
 	#profile-pic-container{
 		font-size: 1.2em;
@@ -101,13 +103,21 @@ section h1{
 		
 	}
 
-	.col-sm-8{
-		padding: 10px 50px 0 0;
+	#about-column{
+		padding: 10px 50px 0px 0px;
 	}
 }
 
 #portfolio{
-	height: 100vh;
+	min-height: 100vh;
+	margin-bottom: 30px;
+
+	#work{
+		padding-right: 0px !important;
+		height: 70vh;
+		overflow: scroll;
+		margin-bottom: 10px;
+	}
 
 	#gallery{
 		margin: 0;
@@ -152,7 +162,7 @@ section h1{
 	}
 
 	#github{
-		padding-right:25px;
+		padding: 0px 25px 0px 0px !important;
 
 		.repoBox a:hover{
 			color: #fff;
@@ -166,30 +176,38 @@ section h1{
 }
 
 #resume{
-	height: 100vh;
+	min-height: 80vh;
 	width:100%;  
 	margin: 0 auto;
+	margin-bottom: 70px;
 
 	#resume-frame{
+		width: 55%;
+		margin: 0 auto;
+		margin-bottom: 20px;
 
+		img{
+			width: 100%;
+		}
 	}
 }
 
 #contact{
-	height: 80vh;
-}
+	min-height: 80vh;
+	margin-bottom:20px; 
 
-.back-to-top {
-	position:absolute;
-   	bottom:90px;
-   	right: 16px;
-   	z-index: 100;
-   	background-color: rgba(0,0,0,0.7);
-   	border-radius: 5px;
-   	padding: 5px;
-   	cursor: pointer;
-   	text-align: center;
-   	color: #fff;
+	.back-to-top {
+		position:absolute;
+	   	bottom:90px;
+	   	right: 16px;
+	   	z-index: 100;
+	   	background-color: rgba(0,0,0,0.7);
+	   	border-radius: 5px;
+	   	padding: 5px;
+	   	cursor: pointer;
+	   	text-align: center;
+	   	color: #fff;
+	}
 }
    
 footer{
@@ -202,6 +220,8 @@ footer{
   text-align: right;
   color: #31b0d5;
   font-size: 0.8em;
+  padding-top:10px; 
+  padding-bottom:10px;
 
   p a:hover{
   	color: #fff;
