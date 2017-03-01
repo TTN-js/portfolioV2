@@ -21,6 +21,7 @@ function toggleNav(){
   });
   $("#hamburger").toggleClass("active-x");
   $("#drop-nav").slideToggle("slow");
+  $("#hamburger").blur();
 }
 
 //hamburger
@@ -95,6 +96,7 @@ $("#nav-name").click(function(){
 // scroll to contact form 
 $("#contact-me").click(function(){
    $("html, body").animate({scrollTop:$('#contact').offset().top - 65}, 700);
+   $("#contact-me").blur();
 });
 
 // type it out
