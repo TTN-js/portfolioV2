@@ -16,9 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!-- bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<!-- waypoint -->
-		<script src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script> 
-
+		
 		<title>T.T.N. | WEB DVLPR</title>
 		<link rel="icon" type="image/png" href="images/ttn.png">
 	</head>
@@ -28,16 +26,17 @@
 		<header>
 			<div class="hero-unit" id="home">
 				<div id="headerback">
-					<h1 class="display-1">Hello world! My name is Thomas </h1>
-					<h2 id="mytypingText" class="small"></h2>
-					<button type="button" class="btn btn-info" id="button">Get To Know Me</button>
+					<h1>Hello world! My name is Thomas </h1>
+					<h2 id="mytypingText"></h2>
+					<button type="button" class="btn btn-info" id="action-button">Get To Know Me</button>
 				</div>
 			</div>
 		</header>
 
 		<!-- navbar --> 
 		<nav id="nav" class="navbar">
-			<ul>
+			<ul id="main-nav">
+				<h2 id="nav-name">T.T.N.</h2>
 				<li><a class="focused selected" id="h" href="#home">home</a></li>
 				<li><a class="focused" id="a" href="#about">about</a></li>
 				<li><a class="focused" id="p" href="#portfolio">portfolio</a></li>
@@ -53,16 +52,30 @@
 				        </ul>
 					</div>
 				</li>
+				<button id="contact-me">contact</button>
+				<button id="hamburger">☰</button>
 			</ul>
+
+			<!-- dropdown -->
+			<div id="drop-nav">
+				<ul>
+					<li><a class="focused selected" id="h2" href="#home">home</a></li>
+					<li><a class="focused" id="a2" href="#about">about</a></li>
+					<li><a class="focused" id="p2" href="#portfolio">portfolio</a></li>
+					<li><a class="focused" id="r2" href="#resume">résumé</a></li>
+					<li><a class="focused" id="c2" href="#contact">contact</a></li>
+				</ul>
+			</div>
 		</nav>
 
+		
 		<div id="wrapper">
 			<section id="about">
 				<h1>about</h1>
 				<span class="divider"></span>
 				<br>
 				<div class="row">
-					<div class="col-sm-4">
+					<div id="pic-column" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 						<div id="profile-pic-container">
 							<img src="images/headshot.png" alt="headshot">
 							<p style="margin-bottom:5px;">Weekdays</p>
@@ -72,21 +85,21 @@
 							<p>Weekends</p>
 						</div>
 					</div>
-					<div class="col-sm-8">
+					<div id="about-column" class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
 						<h2>A little about myself.</h2>
 						<p>
-							I'm an inquisitive individual with a strong work ethic. I enjoy working on teams to accomplish goals and I can also be a self starter with any given task.
+							I'm an inquisitive individual with a strong work ethic. I enjoy working on teams to accomplish goals and I can also be a self-starter with any given task.
 							<br><br>
-							A year ago I decided to make a career change from working in healthcare to web development. I completed an intensive 12 week course at The Iron Yard - Houston which focused on Front End development. After The Iron Yard I worked for <a href="https://www.givepulse.com/" target="_blank" style="color: #31b0d5;" title="Make a Difference">GivePulse</a>, a startup based in Austin. I have recently relocated to Dallas and I bring my passions for helping people and problem solving to tackle any future endeavors. 
+							A year ago I decided to make a career change from working in healthcare to web development. I completed an intensive 12 week course at The Iron Yard - Houston which focused on Front End development. After The Iron Yard I worked for <a href="https://www.givepulse.com/" target="_blank" style="color: #07C;" title="Make a Difference">GivePulse</a>, a startup based in Austin. I have recently relocated to Dallas and I bring my passions for helping people and problem solving to tackle any future endeavors. 
 							<br><br>
-							 Moving forward, I would like to continue learning new technologies and languages while sharpening my coding skills. I would also like to dive into web design from speaking to clients to wire-framing and launching effective solutions. 
+							 Moving forward, I would like to continue learning new technologies and languages while sharpening my coding skills. I would also like to dive into web design, from speaking to clients to wire-framing and launching effective solutions. 
 						</p>
 						<span class="divider2"></span>
 						<h2>Contact Details</h2>
-						<p>Thomas Nguyen</p>
-						<p>Dallas, TX</p>
-						<p><a href="tel:8362216602" style="color: #31b0d5;">832.661.8802</a></p>
-						<p><a href="mailto:ttn.js001@gmail.com" style="color: #31b0d5;">ttn.js001@gmail.com</a></p>
+						<p class="par-break"><i class="fa fa-user" aria-hidden="true" style="margin-right: 2px"></i>Thomas Nguyen</p>
+						<p class="par-break"><i class="fa fa-map-marker" aria-hidden="true"></i> Dallas, TX</p>
+						<p class="par-break"><a href="tel:8462216602" style="color: #07C;"><i class="fa fa-phone" aria-hidden="true"></i> 832.661.8802</a></p>
+						<p class="par-break"><a href="mailto:ttn.js001@gmail.com" style="color: #07C;"><i class="fa fa-envelope" aria-hidden="true"></i> ttn.js001@gmail.com</a></p>
 					</div>
 				</div>
 					
@@ -97,7 +110,7 @@
 				<span class="divider"></span>
 				<br>
 				<div class="row">
-					<div id="work" class="col-sm-8" style="overflow:scroll;">
+					<div id="work" class="col-lg-8 col-md-12 col-sm-12 col-xs-12"">
 						<ul id="gallery">
 							<li>
 								<a href="http://ttn-js.github.io/readAndRamble/#login" target="_blank">
@@ -131,7 +144,7 @@
 							</li> -->
 						</ul>
 					</div>
-					<div id="github" class="col-sm-4"></div>
+					<div id="github" class="col-lg-4 col-md-12 col-sm-12 col-xs-12"></div>
 				</div>
 			</section>
 
@@ -140,13 +153,10 @@
 				<h1>résumé</h1>
 				<span class="divider"></span>
 				<br>
-				<div id="resume-frame" style="overflow: scroll; height: 80vh; width:44%;  margin: 0 auto;">
-					<a href="images/resume2017.png">
-						<img src="images/resume2017.png"  style="width:100%; height:100vh">
+				<div id="resume-frame">
+					<a href="images/resume2017.png" target="_blank">
+						<img src="images/resume2017.png">
 					</a>
-					<!-- <object data="https://drive.google.com/file/d/0B0JZH_Up9plldVNtZndSSTJlX1U/preview" type="application/pdf" width="1000vw" height="600px" >
-				        <embed src="https://drive.google.com/file/d/0B0JZH_Up9plldVNtZndSSTJlX1U/preview" type="application/pdf" />
-				   	</object> -->
 				</div>
 		   	</section>
 
@@ -157,7 +167,7 @@
 				<br>
 				<div id="email_container" class="row" style="padding-left: 30px; margin: 0 auto;">
 				    <div class="row" style="width: 100%;">
-				      	<div style="margin: 0 auto; width: 50%;">
+				      	<div id="contact-container" style="margin: 0 auto; width: 50%;">
 					        <form role="form" action="http://formspree.io/ttn.js001@gmail.com" method="POST" style="width: 100%;">
 					         	<input type="hidden" name="_next" value="//opthomas.win/thanks.html" />
 					          	<input type="hidden" name="_subject" value="New submission!" />
@@ -185,14 +195,14 @@
 				</div>
 				
 				<!-- back to top button -->
-				<div class="back-to-top" style="display: inline; color: #fff;">
+				<div class="back-to-top">
 					<i class="fa fa-chevron-up fa-2x"></i>
 					<br>
 					<p style="margin-bottom: 0px">To Top</p>
 				</div>
 
 				<!-- bottom feeder -->
-				<footer style="padding-top:10px; padding-bottom:10px;">
+				<footer>
 					<p style="font-size:10px;  margin-bottom:0">
 					Designed & Developed by <br> <a href="https://www.linkedin.com/in/ttn-js/">Thomas Nguyen</a><br>
 					<a href="tel:8326618802">832.661.8802</a><br>
@@ -205,6 +215,9 @@
 		<!-- js -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<!-- waypoint -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script> 
+
 	</body>
 
 </html>
