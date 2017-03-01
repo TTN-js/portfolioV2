@@ -2,7 +2,7 @@
 
 	#about{
 		#about-column{
-			padding: 0px 30px 0px 0px;
+			padding: 0px 30px 30px 0px;
 		}
 	}
 	
@@ -25,7 +25,7 @@
 @media(max-width: 1100px){
 	#about{
 		#about-column{
-			padding: 0px 20px 0px 0px;
+			padding: 0px 20px 30px 0px;
 
 			.par-break{
 				margin-bottom: 5px;
@@ -64,7 +64,7 @@
 		}
 
 		#about-column{
-			padding: 0px 10px 0px 0px;
+			padding: 0px 10px 30px 0px;
 
 			
 		}
@@ -81,7 +81,7 @@
 		}
 
 		#about-column{
-			padding: 5px 0px 0px 35px;
+			padding: 5px 0px 30px 35px;
 			/* text-align: center; */
 
 			.par-break{
@@ -100,7 +100,7 @@
 
 		#github{
 			width: 80%;
-			padding: 0px 50px 0px 35px !important;
+			padding: 0px 50px 30px 35px !important;
 			margin: 0 auto;
 
 			#gh_list{
@@ -270,7 +270,7 @@
 			}
 		}
 		#about-column{
-			padding: 10px 25px 0px 15px;
+			padding: 10px 25px 30px 15px;
 
 			.par-break{
 				display: block !important;
@@ -299,7 +299,7 @@
 		padding: 80px 30px 80px;
 
 		#about{
-			padding: 0px 25px 0px 15px;
+			padding: 0px 25px 35px 15px;
 
 			.divider{
 				margin-bottom: 0px;
@@ -308,6 +308,10 @@
 			.par-break{
 				margin-bottom: 0px;
 			}
+		}
+
+		#portfolio{
+			padding-bottom:35px;
 		}
 	}
 }
@@ -401,7 +405,7 @@
 @media(max-width: 455px){
 	#portfolio{
 		#github{
-			padding: 0px 35px 0px 30px !important;
+			padding: 0px 35px 30px 30px !important;
 		}
 	}
 
@@ -417,7 +421,7 @@
 		padding: 80px 20px 80px !important;
 
 		#about{
-			padding: 0px 0px 0px 0px !important;
+			padding: 0px 0px 30px 0px !important;
 		}
 
 		#resume{
