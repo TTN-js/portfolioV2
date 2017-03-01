@@ -28,14 +28,15 @@
 				<div id="headerback">
 					<h1 class="display-1">Hello world! My name is Thomas </h1>
 					<h2 id="mytypingText" class="small"></h2>
-					<button type="button" class="btn btn-info" id="button">Get To Know Me</button>
+					<button type="button" class="btn btn-info" id="action-button">Get To Know Me</button>
 				</div>
 			</div>
 		</header>
 
 		<!-- navbar --> 
 		<nav id="nav" class="navbar">
-			<ul>
+			<ul id="main-nav">
+				<h2 id="nav-name">T.T.N.</h2>
 				<li><a class="focused selected" id="h" href="#home">home</a></li>
 				<li><a class="focused" id="a" href="#about">about</a></li>
 				<li><a class="focused" id="p" href="#portfolio">portfolio</a></li>
@@ -51,9 +52,23 @@
 				        </ul>
 					</div>
 				</li>
+				<button id="contact-me">contact</button>
+				<button id="hamburger">☰</button>
 			</ul>
+
+			<!-- dropdown -->
+			<div id="drop-nav">
+				<ul>
+					<li><a class="focused selected" id="h2" href="#home">home</a></li>
+					<li><a class="focused" id="a2" href="#about">about</a></li>
+					<li><a class="focused" id="p2" href="#portfolio">portfolio</a></li>
+					<li><a class="focused" id="r2" href="#resume">résumé</a></li>
+					<li><a class="focused" id="c2" href="#contact">contact</a></li>
+				</ul>
+			</div>
 		</nav>
 
+		
 		<div id="wrapper">
 			<section id="about">
 				<h1>about</h1>

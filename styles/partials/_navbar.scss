@@ -10,6 +10,46 @@
 
 .navbar{
 	position: relative;
+
+	#drop-nav{
+		position: relative;
+		margin-top: -20px;
+	}	
+}
+
+
+#drop-nav{
+	display: none;
+    background-color: rgba(0,0,0,0.9);
+    width: 100% !important;
+    min-width: 160px;
+    z-index: 150;
+    padding-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+
+    ul{
+    	padding: 0px;
+
+    	li{
+    		display: block;
+    		font-size:1.5em;
+    	}
+    }
+}
+
+.active-burger{
+	display: block !important;
+}
+
+#contact-me, #hamburger, #nav-name{
+	background: none;
+	border: solid 1px #31b0d5;
+	border-radius: 5%;
+	color: #31b0d5;
+	font-family: courier new;
+	font-size: 1.2em;
+	display: none;
 }
 
 nav li {
@@ -76,7 +116,6 @@ nav .focused:focus{
 }
 
 
-
 /* sticky nav */
 .main-nav-scrolled{
 	position: fixed;
@@ -84,4 +123,9 @@ nav .focused:focus{
     top: 0;
     margin-bottom: 136px;
     height: 55px;
+
+    #drop-nav{
+		position: absolute;
+		margin-top: -10px !important;
+	}	
 }
