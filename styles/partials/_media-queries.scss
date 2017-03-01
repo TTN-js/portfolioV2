@@ -230,6 +230,19 @@
 	#wrapper{
 		padding: 80px 40px 80px;
 	}
+
+	#contact{
+		.back-to-top{
+			bottom: 20px;
+			right: initial; 
+			left: 10px;
+			z-index: 999;
+
+			p{
+				display: none;
+			}
+		}
+	}
 }
 
 @media(max-width: 710px){
@@ -246,6 +259,7 @@
 			font-size: 2em !important;
 		}
 	}
+
 }
 
 @media(max-width: 690px){
@@ -293,14 +307,6 @@
 
 			.par-break{
 				margin-bottom: 0px;
-			}
-		}
-
-		#contact{
-			.back-to-top{
-				p{
-					display: none;
-				}
 			}
 		}
 	}
