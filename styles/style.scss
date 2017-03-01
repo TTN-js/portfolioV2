@@ -31,16 +31,18 @@ section h1{
 
 	    h1{
 		    color: #fff;
-		    font-size: 62px;
+		    font-size: 62px !important;
+		    font-weight: 300;
 		    letter-spacing: -1px;
 		    margin-top: -11px;
 		    margin-bottom: 0;
 		    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 	    }
 
 	    h2{
 	    	color: #E4D7B1;
-	    	font-size: 50px;
+	    	font-size: 50px !important;
 	    	letter-spacing: -1px;
 	    	line-height: 2;
 	    	margin-bottom: 5px;
@@ -194,24 +196,18 @@ section h1{
 	min-height: 80vh;
 	margin-bottom:20px; 
 
-	#back-to-top{
-		display: inline;
-		color: #fff;
+	.back-to-top {
+		position:absolute;
+	   	bottom:90px;
+	   	right: 16px;
+	   	z-index: 100;
+	   	background-color: rgba(0,0,0,0.7);
+	   	border-radius: 5px;
+	   	padding: 5px;
+	   	cursor: pointer;
+	   	text-align: center;
+	   	color: #fff;
 	}
-
-}
-
-.back-to-top {
-	position:absolute;
-   	bottom:90px;
-   	right: 16px;
-   	z-index: 100;
-   	background-color: rgba(0,0,0,0.7);
-   	border-radius: 5px;
-   	padding: 5px;
-   	cursor: pointer;
-   	text-align: center;
-   	color: #fff;
 }
    
 footer{
