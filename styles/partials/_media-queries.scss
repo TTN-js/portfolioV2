@@ -166,6 +166,10 @@
 			border-color: #fff;
 		}
 
+		#contact-me:focus, #hamburger:focus, #nav-name:focus{
+			outline: none;
+		}
+
 		#nav-name{
 			color: #31b0d5;
 			border: none;
