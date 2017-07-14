@@ -19,4 +19,4 @@ gulp.task('watch', function(){
 });
 
 //compiles styles and watches file as default
-// gulp.task('default', ['styles', 'watch']);
+gulp.task('default', ['styles', 'watch']);
